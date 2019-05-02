@@ -14,19 +14,25 @@ public class Commit {
     @ManyToOne
     private User author;
 
+    @ManyToOne
+    private Branch branch;
+
     @OneToMany
     private List<File> files;
+
+
 
     public Commit(){
         super();
     }
 
-    public Commit(String description, String hash,  User user, List<File> files){
+    public Commit(String description, String hash,  User user, List<File> files, Branch branch){
         super();
         this.description=description;
         this.hash=hash;
         this.author=user;
         this.files=files;
+        this.branch=branch;
     }
 
     public long getId() {
@@ -69,7 +75,15 @@ public class Commit {
         this.files = files;
     }
 
-  //  public void addFile(File file){
+    public Branch getBranch() {
+        return branch;
+    }
+
+    public void setBranch(Branch branch) {
+        this.branch = branch;
+    }
+
+    //  public void addFile(File file){
   //      this.files.add(file);
   //  }
 }

@@ -15,14 +15,14 @@ public interface BithubService {
    * @param name nombre del usuario a ser creado
    * @return el usuario creado
    */
-  User createUser(String email, String name);
+  User createUser(String email, String name) ;
 
   /**
    * Devuelve un usuario con un email dado
    * @param email email del usuario a devolver
    * @return <code>Optional</code> que contiene el usuario que cumpla los criterios si existe
    */
-  Optional<User> getUserByEmail(String email);
+  User getUserByEmail(String email);
 
   /**
    * Crea un nuevo branch con nombre <code>name</code>
