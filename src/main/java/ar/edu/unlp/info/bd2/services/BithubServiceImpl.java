@@ -145,7 +145,12 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public List<Commit> getAllCommitsForUser(long userId) {
-        return null;
+        try{
+            List<Commit> commitsForUser = repositorio.findCommitsByUser(userId);
+            return commitsForUser;
+        }catch(Exception e){
+            return null;
+        }
     }
 
     @Override

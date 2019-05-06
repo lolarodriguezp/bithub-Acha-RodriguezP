@@ -98,6 +98,14 @@ public class BithubRepository {
         return !branchs.isEmpty() ? branchs.get(query.getFirstResult()) : null;
     }
 
+    public List<Commit> findCommitsByUser(long id){
+        String hql = "from Commit as c where c.author.id = :user_id ";
+        Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter("user_id", id);
+
+        return (List<Commit>) query.getResultList();
+    }
+
 
 
 
