@@ -161,7 +161,7 @@ public class BithubServiceImpl implements BithubService {
     @Override
     public Optional<Branch> getBranchByName(String branchName) {
         try {
-            Branch branch = repositorio.findReviewById(name);
+            Branch branch = repositorio.findBranchByName(branchName);
             return  Optional.ofNullable(branch);
         } catch (Exception e) {
             e.printStackTrace();
