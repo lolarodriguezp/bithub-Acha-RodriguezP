@@ -4,6 +4,7 @@ import ar.edu.unlp.info.bd2.model.*;
 import ar.edu.unlp.info.bd2.repositories.BithubRepository;
 
 import javax.transaction.Transactional;
+import java.rmi.server.ExportException;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -70,7 +71,17 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public Tag createTagForCommit(String commitHash, String name) throws BithubException {
-        return null;
+        Optional<Commit> commit= this.getCommitByHash(commitHash);
+        if (commit == null){
+            throw new BithubException("El commit no existe");
+        }
+        try{
+            Tag tag= new Tag(commitHash,name);
+            return repositorio.saveTag(tag);
+        }catch (Exception e){
+            return null;
+        }
+
     }
 
     @Override
@@ -86,17 +97,34 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public File createFile(String name, String content) {
-        return null;
+        try{
+            File file= new File(name,content);
+            return repositorio.saveFile(file);
+
+        }catch (Exception e){
+            return null;
+        }
     }
 
     @Override
     public Optional<Tag> getTagByName(String tagName) {
-        return Optional.empty();
+        try {
+            Tag tag = repositorio.findTagByName(tagName);
+            return  Optional.ofNullable(tag);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     @Override
     public Review createReview(Branch branch, User user) {
-        return null;
+        try {
+            Review review= new Review(branch,user);
+            return repositorio.saveReview(review);
+        }catch (Exception e){
+            return null;
+        }
     }
 
     @Override
@@ -106,7 +134,13 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public Optional<Review> getReviewById(long id) {
-        return Optional.empty();
+        try {
+            Review review = repositorio.findReviewById(id);
+            return  Optional.ofNullable(review);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     @Override
@@ -126,6 +160,12 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public Optional<Branch> getBranchByName(String branchName) {
-        return Optional.empty();
+        try {
+            Branch branch = repositorio.findReviewById(name);
+            return  Optional.ofNullable(branch);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

@@ -49,5 +49,57 @@ public class BithubRepository {
 
         return !commits.isEmpty() ? commits.get(query.getFirstResult()) : null;
     }
+
+    public Tag saveTag(Tag tag) {
+        this.sessionFactory.getCurrentSession().save(tag);
+        return tag;
+    }
+
+    public Tag findTagByName(String name) {
+        String hql = "from Tag " + "where name = :name_tag ";
+        Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter("name_tag", name);
+        List<Tag> tags = query.getResultList();
+
+        return !tags.isEmpty() ? tags.get(query.getFirstResult()) : null;
+    }
+
+
+    public File saveFile(File file) {
+        this.sessionFactory.getCurrentSession().save(file);
+        return file;
+    }
+
+    public Review saveReview(Review review){
+        this.sessionFactory.getCurrentSession().save(review);
+        return review;
+    }
+
+    public Review findReviewById(long id){
+        String hql = "from Review " + "where id = :id_review ";
+        Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter("id_review", id);
+        List<Review> reviews = query.getResultList();
+
+        return !reviews.isEmpty() ? reviews.get(query.getFirstResult()) : null;
+    }
+
+    public FileReview saveFileReview(FileReview fileReview){
+        this.sessionFactory.getCurrentSession().save(fileReview);
+        return fileReview;
+    }
+
+    public Branch findBranchByName(String name){
+        String hql = "from Branch " + "where name = :name_branch ";
+        Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter("name_branch", name);
+        List<Branch> branchs = query.getResultList();
+
+        return !branchs.isEmpty() ? branchs.get(query.getFirstResult()) : null;
+    }
+
+
+
+
 }
 
