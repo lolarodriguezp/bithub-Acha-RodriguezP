@@ -5,6 +5,7 @@ import ar.edu.unlp.info.bd2.repositories.BithubRepository;
 
 import javax.transaction.Transactional;
 import java.rmi.server.ExportException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -129,6 +130,7 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public FileReview addFileReview(Review review, File file, int lineNumber, String comment) throws BithubException {
+
         return null;
     }
 
@@ -155,12 +157,27 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public Map<Long, Long> getCommitCountByUser() {
-        return null;
+            List<User>  users = repositorio.findAllUsers();
+            Map<Long, Long> map = new HashMap<Long, Long>();
+            for( User u : users){
+                //List<Commit> commits = repositorio.findCommitsByUser(u.getId());
+                Long userId = u.getId();
+                Long commitsCount =  repositorio.countCommits(userId);
+
+                map.put(userId, commitsCount);
+            }
+        return map;
     }
 
     @Override
     public List<User> getUsersThatCommittedInBranch(String branchName) throws BithubException {
-        return null;
+        try{
+            return repositorio.commitsInBranch(branchName);
+        }
+        catch (Exception e){
+            return null;
+        }
+
     }
 
     @Override
