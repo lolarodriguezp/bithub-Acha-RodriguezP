@@ -6,6 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -36,7 +37,7 @@ public class BithubRepository {
     }
 
     public Commit saveCommit(Commit commit) throws Exception {
-        this.sessionFactory.getCurrentSession().save(commit);
+        this.sessionFactory.getCurrentSession().saveOrUpdate(commit);
         return commit;
     }
 
@@ -98,10 +99,10 @@ public class BithubRepository {
         return !branchs.isEmpty() ? branchs.get(query.getFirstResult()) : null;
     }
 
-    public List<Commit> findCommitsByUser(long id){
+    public List<Commit> findCommitsByUser(Long userId){
         String hql = "from Commit as c where c.author.id = :user_id ";
         Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
-        query.setParameter("user_id", id);
+        query.setParameter("user_id", userId);
 
         return (List<Commit>) query.getResultList();
     }
@@ -114,11 +115,12 @@ public class BithubRepository {
 
     public Long countCommits (Long userId)
     {
-        String hql = "select count(c) from Commit c where userId = :user_id";
+        String hql = "select count(c) from Commit c where c.author.id = :user_id";
         Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
         query.setParameter("user_id", userId);
 
         return  (Long) query.getSingleResult();
+
     }
 
     public List<User> commitsInBranch (String branchName)
@@ -129,6 +131,16 @@ public class BithubRepository {
 
         return (List<User>) query.getResultList();
 
+    }
+
+
+    public List<File> fileCommit (Long branchId)
+    {
+        String hql = "select files from Commit c where c.branch.id = :branch_id";
+        Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
+        query.setParameter("branch_id", branchId);
+
+        return (List<File>) query.getResultList();
     }
 
 

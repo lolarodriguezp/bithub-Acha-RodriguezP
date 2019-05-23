@@ -1,6 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: ar.edu.unlp.info.bd2.services.BithubServiceTestCase
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 28.612 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.BithubServiceTestCase
 testCreateReview  Time elapsed: 0 sec  <<< ERROR!
 java.lang.IllegalStateException: Failed to load ApplicationContext
@@ -103,4 +104,10 @@ Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
 Caused by: java.net.ConnectException: Connection refused: connect
+=======
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 32.908 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.BithubServiceTestCase
+testCreateBranchAndCommit  Time elapsed: 1.203 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testCreateBranchAndCommit(BithubServiceTestCase.java:67)
+>>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
 

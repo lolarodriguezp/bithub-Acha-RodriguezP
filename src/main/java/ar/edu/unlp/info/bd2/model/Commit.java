@@ -4,10 +4,12 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "Commit")
 public class Commit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long commitId;
+
     private String description;
     private String hash;
 
@@ -23,11 +25,9 @@ public class Commit {
 
 
     public Commit(){
-        super();
     }
 
     public Commit(String description, String hash,  User user, List<File> files, Branch branch){
-        super();
         this.description=description;
         this.hash=hash;
         this.author=user;
@@ -37,11 +37,11 @@ public class Commit {
     }
 
     public long getId() {
-        return id;
+        return commitId;
     }
 
     public void setId(long id) {
-        this.id = id;
+        this.commitId = id;
     }
 
     public String getMessage() {

@@ -1,35 +1,37 @@
 package ar.edu.unlp.info.bd2.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @Entity
+@Table(name = "Branch")
 public class Branch {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long branchId;
+
     private String name;
 
     @OneToMany
-    private List<Commit> commits;
+    private List<Commit> commit = new ArrayList<>();
 
     public Branch() {
-        super();
     }
 
     public Branch(String name) {
-        super();
         this.name = name;
     }
 
 
     public long getId() {
-        return id;
+        return branchId;
     }
 
     public void setId(long id){
-        this.id=id;
+        this.branchId = id;
     }
 
 
@@ -42,14 +44,15 @@ public class Branch {
     }
 
     public List<Commit> getCommits() {
-        return commits;
+        return commit;
     }
 
     public void setCommits(List<Commit> commits) {
-        this.commits = commits;
+        this.commit = commits;
     }
 
-    public void addCommit(Commit commit){
-        getCommits().add(commit);
+    public void addCommit(Commit unCommit){
+        getCommits().add(unCommit);
     }
+
 }

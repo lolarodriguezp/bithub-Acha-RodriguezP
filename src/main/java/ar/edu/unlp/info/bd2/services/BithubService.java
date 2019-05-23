@@ -65,7 +65,7 @@ public interface BithubService {
    * @param content contenido textual del archivo
    * @return el archivo creado con los parámetros provistos
    */
-  File createFile(String name, String content);
+  File createFile(String content, String name);
 
   /**
    * Obtiene un tag por su nombre
