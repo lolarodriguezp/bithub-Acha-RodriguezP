@@ -48,4 +48,8 @@ public class Branch {
     public void setCommits(List<Commit> commits) {
         this.commits = commits;
     }
+
+    public void addCommit(Commit commit){
+        getCommits().add(commit);
+    }
 }

@@ -6,7 +6,6 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.management.Query;
 import javax.persistence.*;
 import java.util.List;
 
@@ -119,7 +118,7 @@ public class BithubRepository {
         Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
         query.setParameter("user_id", userId);
 
-        return  (Long) query.getResultList();
+        return  (Long) query.getSingleResult();
     }
 
     public List<User> commitsInBranch (String branchName)
@@ -132,13 +131,6 @@ public class BithubRepository {
 
     }
 
-    public Branch findBranchByName(String name){
-        String hql = "from Branch " + "where name = :name_branch ";
-        Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
-        query.setParameter("name_branch", name);
-        List<Branch> branchs = query.getResultList();
 
-        return !branchs.isEmpty() ? branchs.get(query.getFirstResult()) : null;
-    }
 }
 

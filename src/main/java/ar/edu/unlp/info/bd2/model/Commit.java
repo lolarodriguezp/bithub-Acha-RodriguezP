@@ -33,6 +33,7 @@ public class Commit {
         this.author=user;
         this.files=files;
         this.branch=branch;
+        branch.addCommit(this);
     }
 
     public long getId() {
