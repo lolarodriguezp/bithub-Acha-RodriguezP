@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="32.908" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.2+9-Ubuntu-3ubuntu118.04.3"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.2+9-Ubuntu-3ubuntu118.04.3"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/opt/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-48-generic"/>
+    <property name="user.home" value="/home/lolita"/>
+    <property name="user.timezone" value="America/Argentina/Buenos_Aires"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="lolita"/>
+    <property name="java.class.path" value="/opt/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.2"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/opt/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2019-01-15"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testCreateBranchAndCommit" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="1.203">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testCreateBranchAndCommit(BithubServiceTestCase.java:67)
+</error>
+    <system-out><![CDATA[Hibernate: 
+    
+    alter table Branch_Commit 
+       drop 
+       foreign key FKefjm9ivipth08w2dwdd7agcxh
+Hibernate: 
+    
+    alter table Branch_Commit 
+       drop 
+       foreign key FKjd1t7fvxlar8t1khnpxtse174
+Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FK1yo3fl6me7ttfnbb2b6fuiro
+Hibernate: 
+    
+    alter table Commit 
+       drop 
+       foreign key FKkakjjvq54uid1mbwxkpqgfo1h
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK5bktr2h3jhqtdti8lnib2jga9
+Hibernate: 
+    
+    alter table Commit_File 
+       drop 
+       foreign key FK6gdqnp1613irqiwnma4rg6glw
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKrg9sbt9lspdg20vaohwpn78ng
+Hibernate: 
+    
+    alter table FileReview 
+       drop 
+       foreign key FKqljnajx6rrdr2n7fu5crnsqh0
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK4js7sgja4wydh6khfxkjthxxt
+Hibernate: 
+    
+    alter table Review 
+       drop 
+       foreign key FK7rbnplhy7oaulxrkp8cqeablj
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FK9qondsv6cvnc6lhapqkwk5rg8
+Hibernate: 
+    
+    alter table Review_FileReview 
+       drop 
+       foreign key FK1631fwvonh2g6vh2ek5pn8kjh
+Hibernate: 
+    
+    drop table if exists Branch
+Hibernate: 
+    
+    drop table if exists Branch_Commit
+Hibernate: 
+    
+    drop table if exists Commit
+Hibernate: 
+    
+    drop table if exists Commit_File
+Hibernate: 
+    
+    drop table if exists File
+Hibernate: 
+    
+    drop table if exists FileReview
+Hibernate: 
+    
+    drop table if exists Review
+Hibernate: 
+    
+    drop table if exists Review_FileReview
+Hibernate: 
+    
+    drop table if exists Tag
+Hibernate: 
+    
+    drop table if exists User
+Hibernate: 
+    
+    create table Branch (
+       id bigint not null auto_increment,
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Branch_Commit (
+       Branch_id bigint not null,
+        commits_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit (
+       id bigint not null auto_increment,
+        description varchar(255),
+        hash varchar(255),
+        author_id bigint,
+        branch_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Commit_File (
+       Commit_id bigint not null,
+        files_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table File (
+       id bigint not null auto_increment,
+        content varchar(255),
+        filename varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table FileReview (
+       id bigint not null auto_increment,
+        comment varchar(255),
+        lineNumber integer,
+        file_id bigint,
+        review_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review (
+       id bigint not null auto_increment,
+        author_id bigint,
+        branch_id bigint,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Review_FileReview (
+       Review_id bigint not null,
+        reviews_id bigint not null
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Tag (
+       id bigint not null auto_increment,
+        commitHash varchar(255),
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table User (
+       id bigint not null auto_increment,
+        email varchar(255),
+        name varchar(255),
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    alter table Branch_Commit 
+       add constraint UK_c52jpdothley1kjr43p6lo7jg unique (commits_id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint UK_ls7afag4402w8c7l3uq6ca3ps unique (files_id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint UK_rm1kjbfir7bdhf46ii0q7haj5 unique (reviews_id)
+Hibernate: 
+    
+    alter table Branch_Commit 
+       add constraint FKefjm9ivipth08w2dwdd7agcxh 
+       foreign key (commits_id) 
+       references Commit (id)
+Hibernate: 
+    
+    alter table Branch_Commit 
+       add constraint FKjd1t7fvxlar8t1khnpxtse174 
+       foreign key (Branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FK1yo3fl6me7ttfnbb2b6fuiro 
+       foreign key (author_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Commit 
+       add constraint FKkakjjvq54uid1mbwxkpqgfo1h 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK5bktr2h3jhqtdti8lnib2jga9 
+       foreign key (files_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table Commit_File 
+       add constraint FK6gdqnp1613irqiwnma4rg6glw 
+       foreign key (Commit_id) 
+       references Commit (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKrg9sbt9lspdg20vaohwpn78ng 
+       foreign key (file_id) 
+       references File (id)
+Hibernate: 
+    
+    alter table FileReview 
+       add constraint FKqljnajx6rrdr2n7fu5crnsqh0 
+       foreign key (review_id) 
+       references Review (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK4js7sgja4wydh6khfxkjthxxt 
+       foreign key (author_id) 
+       references User (id)
+Hibernate: 
+    
+    alter table Review 
+       add constraint FK7rbnplhy7oaulxrkp8cqeablj 
+       foreign key (branch_id) 
+       references Branch (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FK9qondsv6cvnc6lhapqkwk5rg8 
+       foreign key (reviews_id) 
+       references FileReview (id)
+Hibernate: 
+    
+    alter table Review_FileReview 
+       add constraint FK1631fwvonh2g6vh2ek5pn8kjh 
+       foreign key (Review_id) 
+       references Review (id)
+Hibernate: 
+    insert 
+    into
+        Branch
+        (name) 
+    values
+        (?)
+Hibernate: 
+    select
+        user0_.id as id1_9_,
+        user0_.email as email2_9_,
+        user0_.name as name3_9_ 
+    from
+        User user0_ 
+    where
+        user0_.email=?
+Hibernate: 
+    insert 
+    into
+        User
+        (email, name) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        File
+        (content, filename) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        File
+        (content, filename) 
+    values
+        (?, ?)
+Hibernate: 
+    insert 
+    into
+        Commit
+        (author_id, branch_id, description, hash) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        commit0_.id as id1_2_,
+        commit0_.author_id as author_i4_2_,
+        commit0_.branch_id as branch_i5_2_,
+        commit0_.description as descript2_2_,
+        commit0_.hash as hash3_2_ 
+    from
+        Commit commit0_ 
+    where
+        commit0_.hash=?
+Hibernate: 
+    select
+        branch0_.id as id1_0_,
+        branch0_.name as name2_0_ 
+    from
+        Branch branch0_ 
+    where
+        branch0_.name=?
+]]></system-out>
+    <system-err><![CDATA[may. 21, 2019 6:36:44 P. M. org.springframework.test.context.support.AbstractTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFORMACIÓN: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+may. 21, 2019 6:36:44 P. M. org.springframework.test.context.support.AbstractTestContextBootstrapper getTestExecutionListeners
+INFORMACIÓN: Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b419da, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3b2da18f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5906ebcb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@258e2e41, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3d299e3]
+may. 21, 2019 6:36:44 P. M. org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFORMACIÓN: Refreshing org.springframework.context.support.GenericApplicationContext@23f7d05d: startup date [Tue May 21 18:36:44 ART 2019]; root of context hierarchy
+may. 21, 2019 6:36:46 P. M. org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.1.Final}
+may. 21, 2019 6:36:46 P. M. org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+Tue May 21 18:36:47 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Tue May 21 18:36:49 ART 2019 WARN: Caught while disconnecting...
+
+EXCEPTION STACK TRACE:
+
+
+
+** BEGIN NESTED EXCEPTION ** 
+
+javax.net.ssl.SSLException
+MESSAGE: closing inbound before receiving peer's close_notify
+
+STACKTRACE:
+
+javax.net.ssl.SSLException: closing inbound before receiving peer's close_notify
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:129)
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:117)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:255)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:645)
+	at java.base/sun.security.ssl.SSLSocketImpl.shutdownInput(SSLSocketImpl.java:624)
+	at com.mysql.jdbc.MysqlIO.quit(MysqlIO.java:2246)
+	at com.mysql.jdbc.ConnectionImpl.realClose(ConnectionImpl.java:4236)
+	at com.mysql.jdbc.ConnectionImpl.close(ConnectionImpl.java:1462)
+	at org.apache.commons.dbcp.DelegatingConnection.close(DelegatingConnection.java:247)
+	at org.apache.commons.dbcp.PoolableConnection.reallyClose(PoolableConnection.java:122)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.destroyObject(PoolableConnectionFactory.java:628)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1562)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:473)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:84)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:689)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:724)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:535)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:519)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1769)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1706)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:583)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.resolveBeanReference(ConfigurationClassEnhancer.java:392)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:364)
+	at ar.edu.unlp.info.bd2.config.AppConfig$$EnhancerBySpringCGLIB$$652854f5.createRepository(<generated>)
+	at ar.edu.unlp.info.bd2.config.AppConfig.createService(AppConfig.java:14)
+	at ar.edu.unlp.info.bd2.config.AppConfig$$EnhancerBySpringCGLIB$$652854f5.CGLIB$createService$0(<generated>)
+	at ar.edu.unlp.info.bd2.config.AppConfig$$EnhancerBySpringCGLIB$$652854f5$$FastClassBySpringCGLIB$$e22cd213.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at ar.edu.unlp.info.bd2.config.AppConfig$$EnhancerBySpringCGLIB$$652854f5.createService(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:128)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:107)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:242)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:97)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$null$2(ClassTestDescriptor.java:204)
+	at org.junit.jupiter.engine.descriptor.JupiterTestDescriptor.executeAndMaskThrowable(JupiterTestDescriptor.java:145)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$invokeTestInstancePostProcessors$3(ClassTestDescriptor.java:204)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.invokeTestInstancePostProcessors(ClassTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.instantiateAndPostProcessTestInstance(ClassTestDescriptor.java:189)
+	at org.junit.jupiter.engine.descriptor.ClassTestDescriptor.lambda$testInstanceProvider$1(ClassTestDescriptor.java:181)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:80)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:60)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92)
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$null$2(HierarchicalTestExecutor.java:92)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:177)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:497)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.lambda$execute$3(HierarchicalTestExecutor.java:92)
+	at org.junit.platform.engine.support.hierarchical.SingleTestExecutor.executeSafely(SingleTestExecutor.java:66)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:77)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:51)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:43)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:170)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:154)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:90)
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:132)
+	at org.junit.platform.surefire.provider.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:111)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:286)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:240)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+
+
+** END NESTED EXCEPTION **
+
+
+Tue May 21 18:36:49 ART 2019 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+may. 21, 2019 6:36:49 P. M. org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+may. 21, 2019 6:37:15 P. M. org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+may. 21, 2019 6:37:15 P. M. org.springframework.orm.hibernate5.HibernateTransactionManager afterPropertiesSet
+INFORMACIÓN: Using DataSource [org.apache.commons.dbcp.BasicDataSource@37e4d7bb] of Hibernate SessionFactory for HibernateTransactionManager
+may. 21, 2019 6:37:16 P. M. org.springframework.test.context.transaction.TransactionContext startTransaction
+INFORMACIÓN: Began transaction (1) for test context [DefaultTestContext@73bb1337 testClass = BithubServiceTestCase, testInstance = ar.edu.unlp.info.bd2.services.BithubServiceTestCase@685f5d0d, testMethod = testCreateBranchAndCommit@BithubServiceTestCase, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@3830b06c testClass = BithubServiceTestCase, locations = '{}', classes = '{class ar.edu.unlp.info.bd2.config.AppConfig, class ar.edu.unlp.info.bd2.config.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.AnnotationConfigContextLoader', parent = [null]], attributes = map[[empty]]]; transaction manager [org.springframework.orm.hibernate5.HibernateTransactionManager@149c39b]; rollback [true]
+may. 21, 2019 6:37:16 P. M. org.springframework.test.context.transaction.TransactionContext endTransaction
+INFORMACIÓN: Rolled back transaction for test context [DefaultTestContext@73bb1337 testClass = BithubServiceTestCase, testInstance = ar.edu.unlp.info.bd2.services.BithubServiceTestCase@685f5d0d, testMethod = testCreateBranchAndCommit@BithubServiceTestCase, testException = java.lang.NullPointerException, mergedContextConfiguration = [MergedContextConfiguration@3830b06c testClass = BithubServiceTestCase, locations = '{}', classes = '{class ar.edu.unlp.info.bd2.config.AppConfig, class ar.edu.unlp.info.bd2.config.HibernateConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.AnnotationConfigContextLoader', parent = [null]], attributes = map[[empty]]].
+]]></system-err>
+  </testcase>
+</testsuite>

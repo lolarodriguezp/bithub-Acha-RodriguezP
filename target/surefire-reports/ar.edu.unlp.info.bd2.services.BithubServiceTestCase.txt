@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ar.edu.unlp.info.bd2.services.BithubServiceTestCase
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 32.908 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.BithubServiceTestCase
+testCreateBranchAndCommit  Time elapsed: 1.203 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testCreateBranchAndCommit(BithubServiceTestCase.java:67)
+

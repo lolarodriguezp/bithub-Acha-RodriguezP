@@ -97,7 +97,7 @@ public class BithubServiceImpl implements BithubService {
     }
 
     @Override
-    public File createFile(String name, String content) {
+    public File createFile(String content, String name) {
         try{
             File file= new File(name,content);
             return repositorio.saveFile(file);
@@ -130,8 +130,20 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public FileReview addFileReview(Review review, File file, int lineNumber, String comment) throws BithubException {
+        List<File> files = repositorio.fileCommit(review.getBranch().getId());
+        if (!files.contains(file))
+        {
+            throw new BithubException("El file no pertenece al branch");
+        }
+        try{
+            FileReview fileReview = new FileReview(review, file, lineNumber, comment);
+            return repositorio.saveFileReview(fileReview);
+        }
+        catch (Exception e)
+        {
+            return null;
+        }
 
-        return null;
     }
 
     @Override
@@ -157,18 +169,23 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public Map<Long, Long> getCommitCountByUser() {
-            List<User>  users = repositorio.findAllUsers();
+        try
+        {
+            List<User> users = repositorio.findAllUsers();
             Map<Long, Long> map = new HashMap<Long, Long>();
-            for( User u : users){
-                //List<Commit> commits = repositorio.findCommitsByUser(u.getId());
+            for(User u : users){
                 Long userId = u.getId();
                 Long commitsCount =  repositorio.countCommits(userId);
-
                 map.put(userId, commitsCount);
             }
-        return map;
+            return map;
+        }
+        catch (Exception e)
+        {
+            return null;
+        }
     }
-
+                    //se necesita try catch con bithub exception??
     @Override
     public List<User> getUsersThatCommittedInBranch(String branchName) throws BithubException {
         try{
@@ -178,7 +195,7 @@ public class BithubServiceImpl implements BithubService {
             return null;
         }
 
-    }
+    } //ver si hay q hacer la consulta mas general (?
 
     @Override
     public Optional<Branch> getBranchByName(String branchName) {
