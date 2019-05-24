@@ -172,11 +172,10 @@ public class BithubServiceImpl implements BithubService {
         try
         {
             List<User> users = repositorio.findAllUsers();
-            Map<Long, Long> map = new HashMap<Long, Long>();
-            for(User u : users){
-                Long userId = u.getId();
-                Long commitsCount =  repositorio.countCommits(userId);
-                map.put(userId, commitsCount);
+            Map map = new HashMap();
+
+            for (User user : users){
+                map.put(new Long (user.getId()), new Long(user.getCommits().size()));
             }
             return map;
         }

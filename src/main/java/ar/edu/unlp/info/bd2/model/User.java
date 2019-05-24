@@ -2,6 +2,7 @@ package ar.edu.unlp.info.bd2.model;
 
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class User {
@@ -10,6 +11,9 @@ public class User {
     private long id;
     private String name;
     private String email;
+
+    @OneToMany
+    private List<Commit> commits;
 
     public long getId() {
         return id;
@@ -42,6 +46,18 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public List<Commit> getCommits() {
+        return commits;
+    }
+
+    public void setCommits(List<Commit> commits) {
+        this.commits = commits;
+    }
+
+    public void addCommit(Commit unCommit){
+        getCommits().add(unCommit);
     }
 
 }

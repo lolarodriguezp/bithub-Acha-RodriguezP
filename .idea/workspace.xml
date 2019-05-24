@@ -2,36 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79812926-60f7-42cc-a897-221e811e932d" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bd2-2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bd2-2019.iml" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/config/HibernateConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Branch.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Commit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/File.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/FileReview.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Review.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Tag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/BithubException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/BithubService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/BithubServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/createDatabase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/createDatabase.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/config/HibernateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/config/HibernateConfiguration.java" afterDir="false" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/FileReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/FileReview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Branch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Commit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Commit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/repositories/BithubRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/repositories/BithubRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/BithubServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/BithubServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,24 +28,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2924">
-              <caret line="196" column="65" lean-forward="true" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="65" />
+            <state relative-caret-position="-170">
+              <caret line="35" selection-start-line="35" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -71,122 +43,71 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+            <state relative-caret-position="952">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
-=======
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2895">
-              <caret line="203" selection-start-line="203" selection-end-line="203" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#476#477#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+                <element signature="e#603#604#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#734#735#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#803#804#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
+                <element signature="e#892#893#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1665">
-              <caret line="131" selection-start-line="131" selection-end-line="131" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.4.RELEASE/spring-tx-5.0.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state relative-caret-position="391">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
-=======
-            <state relative-caret-position="360">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/File.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-=======
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <state relative-caret-position="485">
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="-234">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+                <element signature="e#941#942#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -194,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/FileReview.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="332">
+              <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding>
                 <element signature="e#896#897#0" expanded="true" />
                 <element signature="e#923#924#0" expanded="true" />
@@ -205,23 +126,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Review.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="123">
+              <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#655#656#0" expanded="true" />
                 <element signature="e#684#685#0" expanded="true" />
                 <element signature="e#946#947#0" expanded="true" />
                 <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
               </folding>
-=======
-        <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java">
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Tag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="67" selection-start-line="67" selection-end-line="67" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+            <state relative-caret-position="255">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="e#251#252#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#686#687#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,13 +170,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubService.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state relative-caret-position="1445">
               <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
-=======
-            <state relative-caret-position="570">
-              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
             </state>
           </provider>
         </entry>
@@ -257,26 +193,17 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/File.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Tag.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/FileReview.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Review.java" />
         <option value="$PROJECT_DIR$/createDatabase.sh" />
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/config/HibernateConfiguration.java" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubService.java" />
         <option value="$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java" />
-=======
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/FileReview.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Review.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
       </list>
     </option>
   </component>
@@ -291,18 +218,10 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
-    <option name="x" value="15" />
-    <option name="y" value="30" />
-    <option name="width" value="1890" />
-    <option name="height" value="960" />
-=======
-    <option name="x" value="108" />
-    <option name="y" value="256" />
-    <option name="width" value="1281" />
-    <option name="height" value="732" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+  <component name="ProjectFrameBounds">
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -310,43 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
-              <item name="ar.edu.unlp.info.bd2" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
-              <item name="ar.edu.unlp.info.bd2" type="1f31426a:PackageElementNode" />
-              <item name="config" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
-              <item name="ar.edu.unlp.info.bd2" type="1f31426a:PackageElementNode" />
-              <item name="model" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
-              <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
-              <item name="ar.edu.unlp.info.bd2" type="1f31426a:PackageElementNode" />
-              <item name="services" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -371,6 +253,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bd2-2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bithub-Acha-RodriguezP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bd2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bd2-2019" type="b2602c69:ProjectViewProjectNode" />
@@ -409,7 +299,6 @@
         <subPane>
           <expand>
             <path>
-<<<<<<< HEAD
               <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
               <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
             </path>
@@ -417,6 +306,12 @@
               <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
               <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
               <item name="ar.edu.unlp.info.bd2" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
+              <item name="ar.edu.unlp.info.bd2" type="1f31426a:PackageElementNode" />
+              <item name="config" type="1f31426a:PackageElementNode" />
             </path>
             <path>
               <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
@@ -428,39 +323,28 @@
               <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
               <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
               <item name="ar.edu.unlp.info.bd2" type="1f31426a:PackageElementNode" />
+              <item name="repositories" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="bd2-2019" type="58d84e3e:PackageViewProjectNode" />
+              <item name="bd2-2019" type="616d4139:PackageViewModuleNode" />
+              <item name="ar.edu.unlp.info.bd2" type="1f31426a:PackageElementNode" />
               <item name="services" type="1f31426a:PackageElementNode" />
             </path>
-=======
-              <item name="bd2-2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bithub-Acha-RodriguezP" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Facultad/Bases de datos 2/bithubEzequiel/bithub" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
-=======
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -474,26 +358,7 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
   <component name="RunManager">
-=======
-  <component name="RunManager" selected="JUnit.BithubServiceTestCase.testCreateBranchAndCommit">
-    <configuration name="BithubServiceTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bd2-2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ar.edu.unlp.info.bd2.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ar.edu.unlp.info.bd2.services" />
-      <option name="MAIN_CLASS_NAME" value="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
     <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bd2-2019" />
       <extension name="coverage">
@@ -502,19 +367,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-<<<<<<< HEAD
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="C:\Program Files\Java\jdk1.8.0_181\jre" />
-=======
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
       <option name="PACKAGE_NAME" value="ar.edu.unlp.info.bd2.services" />
       <option name="MAIN_CLASS_NAME" value="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" />
       <option name="METHOD_NAME" value="testCreateBranchAndCommit" />
       <option name="TEST_OBJECT" value="method" />
-<<<<<<< HEAD
       <option name="PARAMETERS" value="" />
-=======
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -522,10 +381,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BithubServiceTestCase.testCreateBranchAndCommit" />
-<<<<<<< HEAD
-=======
-        <item itemvalue="JUnit.BithubServiceTestCase" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
       </list>
     </recent_temporary>
   </component>
@@ -543,7 +398,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-<<<<<<< HEAD
     <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 13h 04m 43s.xml">
       <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
     </history-entry>
@@ -551,50 +405,29 @@
       <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 13h 34m 30s.xml">
-=======
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 20m 44s.xml">
       <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 23m 28s.xml">
+    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.23 at 18h 40m 11s.xml">
       <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 24m 14s.xml">
-      <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 31m 07s.xml">
-      <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 41m 13s.xml">
-      <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 41m 39s.xml">
-      <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 42m 14s.xml">
-      <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 43m 00s.xml">
-      <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 43m 40s.xml">
-      <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.21 at 20h 44m 55s.xml">
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+    <history-entry file="BithubServiceTestCase_testCreateBranchAndCommit - 2019.05.23 at 18h 40m 41s.xml">
       <configuration name="BithubServiceTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
     </history-entry>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="633" y="0" width="653" height="687" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5394933" visible="true" weight="0.26882592" />
-=======
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5394933" weight="0.2804781" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5394933" visible="true" weight="0.05059022" />
       <window_info id="Structure" order="1" sideWeight="0.4605067" side_tool="true" weight="0.24940239" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -604,25 +437,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884902" />
       <window_info anchor="bottom" id="Run" order="2" />
-<<<<<<< HEAD
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7279352" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.64534414" visible="true" weight="0.053285968" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50121456" side_tool="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.64534414" visible="true" weight="0.054054055" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5020243" side_tool="true" weight="0.3232682" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49878544" weight="0.3285968" />
-=======
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3826607" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22869955" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32884902" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.37518686" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4979757" weight="0.3232682" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -666,7 +488,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java</url>
-<<<<<<< HEAD
           <line>36</line>
           <properties />
           <option name="timeStamp" value="2" />
@@ -676,102 +497,16 @@
           <line>34</line>
           <properties />
           <option name="timeStamp" value="3" />
-=======
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java</url>
-          <line>203</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java</url>
-          <line>202</line>
+          <url>file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java</url>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java</url>
-          <line>98</line>
-          <properties />
-          <option name="timeStamp" value="10" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
-<<<<<<< HEAD
-=======
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>branchs.get(0</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>branchs.get(0).getCommits()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.sessionFactory.getCurrentSession().createQuery(&quot;from Branch&quot;).getResultList()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.sessionFactory.getCurrentSession().createQuery(&quot;from Branch&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.sessionFactory.getCurrentSession().createQuery(&quot;FROM BRANCH&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.sessionFactory.getCurrentSession().createQuery(&quot;SELECT * FROM BRANCH&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>repositorio.saveCommit(commit)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>repositorio.saveBranch(branch)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.service.getBranchByName(&quot;master&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>service.get</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
   <component name="editorHistoryManager">
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/function/Executable.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubException.java">
@@ -781,111 +516,25 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-=======
-    <entry file="file://$PROJECT_DIR$/bd2-2019.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Tag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#686#687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="2686">
-          <caret line="168" column="19" selection-start-line="168" selection-start-column="19" selection-end-line="168" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-=======
-        <state relative-caret-position="225">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/createDatabase.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createDatabase.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/FileReview.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-          </folding>
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/function/Predicate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/function/Predicate.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/config/HibernateConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="52" column="67" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="-67">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -896,44 +545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="62">
-          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-          </folding>
-=======
-        <state relative-caret-position="-1395" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/config/HibernateConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/config/AppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-=======
-        <state relative-caret-position="150">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
           <folding>
             <element signature="e#572#573#0" expanded="true" />
             <element signature="e#611#612#0" expanded="true" />
@@ -941,98 +556,81 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+        <state relative-caret-position="-162">
+          <caret line="357" selection-start-line="357" selection-end-line="357" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="35" selection-start-line="35" selection-end-line="36" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="72">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/FileReview.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-=======
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.4.RELEASE/spring-core-5.0.4.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.4.RELEASE/spring-tx-5.0.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.1.Final/hibernate-core-5.4.1.Final.jar!/org/hibernate/Session.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2895">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.4.RELEASE/spring-aop-5.0.4.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.4.RELEASE/spring-tx-5.0.4.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+        <state relative-caret-position="332">
+          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding>
             <element signature="e#896#897#0" expanded="true" />
             <element signature="e#923#924#0" expanded="true" />
@@ -1042,47 +640,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Review.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="289">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-=======
-        <state relative-caret-position="1365">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+        <state relative-caret-position="123">
+          <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#655#656#0" expanded="true" />
             <element signature="e#684#685#0" expanded="true" />
             <element signature="e#946#947#0" expanded="true" />
             <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java">
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Tag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="196" column="65" lean-forward="true" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="65" />
-=======
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#251#252#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#686#687#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/BithubService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        <state relative-caret-position="-234">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/BithubRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0
+        <state relative-caret-position="187">
+          <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

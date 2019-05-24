@@ -28,6 +28,7 @@ public class FileReview {
         this.file=file;
         this.lineNumber=lineNumber;
         this.comment=comment;
+        review.addFileReview(this);
     }
 
     public long getId() {

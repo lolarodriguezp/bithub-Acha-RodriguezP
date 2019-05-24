@@ -34,6 +34,7 @@ public class Commit {
         this.files=files;
         this.branch=branch;
         branch.addCommit(this);
+        user.addCommit(this);
     }
 
     public long getId() {

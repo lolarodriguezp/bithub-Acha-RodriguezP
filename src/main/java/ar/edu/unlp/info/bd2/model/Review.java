@@ -59,4 +59,8 @@ public class Review {
     public void setReviews(List<FileReview> reviews) {
         this.reviews = reviews;
     }
+
+    public void addFileReview(FileReview fileReview) {
+        getReviews().add(fileReview);
+    }
 }

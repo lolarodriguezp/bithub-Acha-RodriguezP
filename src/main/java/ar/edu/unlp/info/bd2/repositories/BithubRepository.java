@@ -100,11 +100,12 @@ public class BithubRepository {
     }
 
     public List<Commit> findCommitsByUser(Long userId){
-        String hql = "from Commit as c where c.author.id = :user_id ";
+        String hql = "from User where id = :id";
         Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
         query.setParameter("user_id", userId);
+        User user = (User) query.getSingleResult();
 
-        return (List<Commit>) query.getResultList();
+        return user.getCommits();
     }
 
     public List<User> findAllUsers(){
