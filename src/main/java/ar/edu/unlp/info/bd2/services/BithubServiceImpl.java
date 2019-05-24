@@ -73,7 +73,7 @@ public class BithubServiceImpl implements BithubService {
     @Override
     public Tag createTagForCommit(String commitHash, String name) throws BithubException {
         Optional<Commit> commit= this.getCommitByHash(commitHash);
-        if (commit == null){
+        if (!commit.isPresent()){
             throw new BithubException("El commit no existe");
         }
         try{
@@ -130,20 +130,16 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public FileReview addFileReview(Review review, File file, int lineNumber, String comment) throws BithubException {
-        List<File> files = repositorio.fileCommit(review.getBranch().getId());
-        if (!files.contains(file))
-        {
-            throw new BithubException("El file no pertenece al branch");
-        }
-        try{
-            FileReview fileReview = new FileReview(review, file, lineNumber, comment);
-            return repositorio.saveFileReview(fileReview);
-        }
-        catch (Exception e)
-        {
-            return null;
-        }
 
+        List<Commit> commits = review.getBranch().getCommits();
+
+        for (Commit commit : commits){
+            if (commit.getFiles().contains(file)){
+                FileReview fileReview = new FileReview(review, file, lineNumber, comment);
+                return repositorio.saveFileReview(fileReview);
+            }
+        }
+            throw new BithubException("El file no pertenece al branch");
     }
 
     @Override
@@ -172,7 +168,7 @@ public class BithubServiceImpl implements BithubService {
         try
         {
             List<User> users = repositorio.findAllUsers();
-            Map map = new HashMap();
+            Map<Long,Long> map = new HashMap();
 
             for (User user : users){
                 map.put(new Long (user.getId()), new Long(user.getCommits().size()));
@@ -187,12 +183,13 @@ public class BithubServiceImpl implements BithubService {
                     //se necesita try catch con bithub exception??
     @Override
     public List<User> getUsersThatCommittedInBranch(String branchName) throws BithubException {
-        try{
-            return repositorio.commitsInBranch(branchName);
+        Optional<Branch> branch = getBranchByName(branchName);
+        if(branch.isPresent()){
+                return repositorio.commitsInBranch(branchName);
+        }else{
+            throw new BithubException("El branch no existe");
         }
-        catch (Exception e){
-            return null;
-        }
+
 
     } //ver si hay q hacer la consulta mas general (?
 

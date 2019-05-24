@@ -1,6 +1,7 @@
 package ar.edu.unlp.info.bd2.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -16,7 +17,7 @@ public class Review {
     private User author;
 
     @OneToMany
-    private List<FileReview> reviews;
+    private List<FileReview> reviews = new ArrayList<FileReview>();
 
     public Review(){
         super();

@@ -1,18 +1,3 @@
-<<<<<<< HEAD
-ar\edu\unlp\info\bd2\model\Commit.class
-ar\edu\unlp\info\bd2\services\BithubService.class
-ar\edu\unlp\info\bd2\config\HibernateConfiguration.class
-ar\edu\unlp\info\bd2\services\BithubException.class
-ar\edu\unlp\info\bd2\model\Review.class
-ar\edu\unlp\info\bd2\model\User.class
-ar\edu\unlp\info\bd2\services\BithubServiceImpl.class
-ar\edu\unlp\info\bd2\model\File.class
-ar\edu\unlp\info\bd2\model\Branch.class
-ar\edu\unlp\info\bd2\model\Tag.class
-ar\edu\unlp\info\bd2\repositories\BithubRepository.class
-ar\edu\unlp\info\bd2\config\AppConfig.class
-ar\edu\unlp\info\bd2\model\FileReview.class
-=======
 ar/edu/unlp/info/bd2/services/BithubServiceImpl.class
 ar/edu/unlp/info/bd2/model/Review.class
 ar/edu/unlp/info/bd2/services/BithubService.class
@@ -26,4 +11,3 @@ ar/edu/unlp/info/bd2/model/FileReview.class
 ar/edu/unlp/info/bd2/model/Tag.class
 ar/edu/unlp/info/bd2/services/BithubException.class
 ar/edu/unlp/info/bd2/model/File.class
->>>>>>> 2f7b3b298484249b52874c581d6c093a4d1fb5e0

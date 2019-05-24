@@ -99,17 +99,17 @@ public class BithubRepository {
         return !branchs.isEmpty() ? branchs.get(query.getFirstResult()) : null;
     }
 
-    public List<Commit> findCommitsByUser(Long userId){
+    public List<Commit> findCommitsByUser(long userId){
         String hql = "from User where id = :id";
         Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
-        query.setParameter("user_id", userId);
+        query.setParameter("id", userId);
         User user = (User) query.getSingleResult();
 
         return user.getCommits();
     }
 
     public List<User> findAllUsers(){
-        String hql = "from Users";
+        String hql = "from User";
         Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
         return (List<User>) query.getResultList();
     }
@@ -126,11 +126,11 @@ public class BithubRepository {
 
     public List<User> commitsInBranch (String branchName)
     {
-        String hql = "select author from Commit c where c.branch.name = :branch_name";
+        String hql = "select distinct author from Commit c where c.branch.name = :branch_name";
         Query query = this.sessionFactory.getCurrentSession().createQuery(hql);
         query.setParameter("branch_name", branchName);
-
-        return (List<User>) query.getResultList();
+        List<User> users = (List<User>) query.getResultList();
+        return users;
 
     }
 

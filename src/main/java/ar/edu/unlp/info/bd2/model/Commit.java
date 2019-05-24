@@ -1,6 +1,7 @@
 package ar.edu.unlp.info.bd2.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -20,7 +21,7 @@ public class Commit {
     private Branch branch;
 
     @OneToMany
-    private List<File> files;
+    private List<File> files = new ArrayList<File>();
 
 
 

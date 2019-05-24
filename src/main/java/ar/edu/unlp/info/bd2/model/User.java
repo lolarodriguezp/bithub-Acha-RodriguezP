@@ -2,6 +2,7 @@ package ar.edu.unlp.info.bd2.model;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,7 +14,7 @@ public class User {
     private String email;
 
     @OneToMany
-    private List<Commit> commits;
+    private List<Commit> commits = new ArrayList<Commit>();
 
     public long getId() {
         return id;
