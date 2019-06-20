@@ -1,14 +1,10 @@
 package ar.edu.unlp.info.bd2.model;
 
-import javax.persistence.*;
-import java.util.ArrayList;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.util.List;
 
-@Entity
-public class Review {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+public class Review extends PersistentObject {
 
     @ManyToOne
     private Branch branch;
@@ -17,7 +13,7 @@ public class Review {
     private User author;
 
     @OneToMany
-    private List<FileReview> reviews = new ArrayList<FileReview>();
+    private List<FileReview> reviews;
 
     public Review(){
         super();
@@ -27,14 +23,6 @@ public class Review {
         super();
         this.branch=branch;
         this.author=user;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public Branch getBranch() {
@@ -64,4 +52,5 @@ public class Review {
     public void addFileReview(FileReview fileReview) {
         getReviews().add(fileReview);
     }
+
 }

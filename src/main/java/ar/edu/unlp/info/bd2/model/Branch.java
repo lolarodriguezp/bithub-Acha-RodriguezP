@@ -1,17 +1,10 @@
 package ar.edu.unlp.info.bd2.model;
 
-import javax.persistence.*;
+import javax.persistence.OneToMany;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
-@Entity
-@Table(name = "Branch")
-public class Branch {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long branchId;
+public class Branch extends PersistentObject {
 
     private String name;
 
@@ -24,16 +17,6 @@ public class Branch {
     public Branch(String name) {
         this.name = name;
     }
-
-
-    public long getId() {
-        return branchId;
-    }
-
-    public void setId(long id){
-        this.branchId = id;
-    }
-
 
     public String getName() {
         return name;

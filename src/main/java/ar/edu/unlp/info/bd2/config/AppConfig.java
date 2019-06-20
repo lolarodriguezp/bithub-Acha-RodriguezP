@@ -1,8 +1,10 @@
 package ar.edu.unlp.info.bd2.config;
 
-import ar.edu.unlp.info.bd2.repositories.BithubRepository;
+import ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository;
+import ar.edu.unlp.info.bd2.repositories.MongoDBBithubRepository;
 import ar.edu.unlp.info.bd2.services.BithubService;
-import ar.edu.unlp.info.bd2.services.BithubServiceImpl;
+import ar.edu.unlp.info.bd2.services.HibernateBithubService;
+import ar.edu.unlp.info.bd2.services.MongoDBBithubServiceImplementation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,15 +12,24 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
 
   @Bean
-  public BithubService createService() {
-    BithubRepository repository = this.createRepository();
-    return new BithubServiceImpl(repository);
+  public BithubService hibernateService() {
+    HibernateBithubRepository repository = this.createRepository();
+    return new HibernateBithubService(repository);
   }
 
   @Bean
-  public BithubRepository createRepository() {
-    return new BithubRepository();
+  public HibernateBithubRepository createRepository() {
+    return new HibernateBithubRepository();
   }
 
-}
+  @Bean
+  public BithubService mongoDBService() {
+    MongoDBBithubRepository repository = this.createMongoDBRepository();
+    return new MongoDBBithubServiceImplementation(repository);
+  }
 
+  @Bean
+  public MongoDBBithubRepository createMongoDBRepository() {
+    return new MongoDBBithubRepository();
+  }
+}

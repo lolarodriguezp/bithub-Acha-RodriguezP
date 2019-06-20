@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: ar.edu.unlp.info.bd2.services.BithubServiceTestCase
--------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.867 sec - in ar.edu.unlp.info.bd2.services.BithubServiceTestCase

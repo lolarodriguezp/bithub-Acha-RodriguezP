@@ -1,15 +1,10 @@
 package ar.edu.unlp.info.bd2.model;
 
-import javax.persistence.*;
-import java.util.ArrayList;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.util.List;
 
-@Entity
-@Table(name = "Commit")
-public class Commit {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long commitId;
+public class Commit extends PersistentObject{
 
     private String description;
     private String hash;
@@ -21,7 +16,7 @@ public class Commit {
     private Branch branch;
 
     @OneToMany
-    private List<File> files = new ArrayList<File>();
+    private List<File> files;
 
 
 
@@ -38,13 +33,6 @@ public class Commit {
         user.addCommit(this);
     }
 
-    public long getId() {
-        return commitId;
-    }
-
-    public void setId(long id) {
-        this.commitId = id;
-    }
 
     public String getMessage() {
         return description;
@@ -85,8 +73,4 @@ public class Commit {
     public void setBranch(Branch branch) {
         this.branch = branch;
     }
-
-    //  public void addFile(File file){
-  //      this.files.add(file);
-  //  }
 }
