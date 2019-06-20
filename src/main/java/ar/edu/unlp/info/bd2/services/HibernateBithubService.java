@@ -1,31 +1,30 @@
 package ar.edu.unlp.info.bd2.services;
 
 import ar.edu.unlp.info.bd2.model.*;
-import ar.edu.unlp.info.bd2.repositories.BithubRepository;
+import ar.edu.unlp.info.bd2.repositories.HibernateBithubRepository;
 
 import javax.transaction.Transactional;
-import java.rmi.server.ExportException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-public class BithubServiceImpl implements BithubService {
+public class HibernateBithubService implements BithubService<Long> {
 
-    private BithubRepository repositorio;
+    private HibernateBithubRepository repositorio;
 
-    public BithubServiceImpl(BithubRepository repository) {
+    public HibernateBithubService(HibernateBithubRepository repository) {
         this.repositorio = repository;
     }
 
     @Transactional
     @Override
     public User createUser(String email, String name){
-        User user = this.getUserByEmail(email);
+        Optional<User> user = this.getUserByEmail(email);
         if (user == null) {
             try {
-                user = new User(name, email);
-                return repositorio.saveUser(user);
+                User us = new User(name, email);
+                return repositorio.saveUser(us);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -35,10 +34,10 @@ public class BithubServiceImpl implements BithubService {
     }
 
     @Override
-    public User getUserByEmail(String email) {
+    public Optional<User> getUserByEmail(String email) {
         try {
             User user = repositorio.findByEmail(email);
-            return user;
+            return Optional.ofNullable(user);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -139,11 +138,11 @@ public class BithubServiceImpl implements BithubService {
                 return repositorio.saveFileReview(fileReview);
             }
         }
-            throw new BithubException("El file no pertenece al branch");
+        throw new BithubException("El file no pertenece al branch");
     }
 
     @Override
-    public Optional<Review> getReviewById(long id) {
+    public Optional<Review> getReviewById(Long id) {
         try {
             Review review = repositorio.findReviewById(id);
             return  Optional.ofNullable(review);
@@ -154,7 +153,7 @@ public class BithubServiceImpl implements BithubService {
     }
 
     @Override
-    public List<Commit> getAllCommitsForUser(long userId) {
+    public List<Commit> getAllCommitsForUser(Long userId) {
         try{
             List<Commit> commitsForUser = repositorio.findCommitsByUser(userId);
             return commitsForUser;
@@ -180,12 +179,12 @@ public class BithubServiceImpl implements BithubService {
             return null;
         }
     }
-                    //se necesita try catch con bithub exception??
+    //se necesita try catch con bithub exception??
     @Override
     public List<User> getUsersThatCommittedInBranch(String branchName) throws BithubException {
         Optional<Branch> branch = getBranchByName(branchName);
         if(branch.isPresent()){
-                return repositorio.commitsInBranch(branchName);
+            return repositorio.commitsInBranch(branchName);
         }else{
             throw new BithubException("El branch no existe");
         }

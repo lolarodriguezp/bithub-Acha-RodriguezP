@@ -1,26 +1,15 @@
 package ar.edu.unlp.info.bd2.model;
 
-
-import javax.persistence.*;
-import java.util.ArrayList;
+import javax.persistence.OneToMany;
 import java.util.List;
 
-@Entity
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+public class User extends PersistentObject {
+
     private String name;
     private String email;
 
     @OneToMany
-    private List<Commit> commits = new ArrayList<Commit>();
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id){ this.id=id; }
+    private List<Commit> commits;
 
     public User() {
         super();
@@ -60,5 +49,6 @@ public class User {
     public void addCommit(Commit unCommit){
         getCommits().add(unCommit);
     }
+
 
 }

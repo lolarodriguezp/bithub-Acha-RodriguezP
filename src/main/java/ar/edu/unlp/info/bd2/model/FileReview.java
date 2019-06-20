@@ -1,13 +1,8 @@
 package ar.edu.unlp.info.bd2.model;
 
+import javax.persistence.ManyToOne;
 
-import javax.persistence.*;
-
-@Entity
-public class FileReview {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+public class FileReview extends PersistentObject {
 
     @ManyToOne
     private Review review;
@@ -29,14 +24,6 @@ public class FileReview {
         this.lineNumber=lineNumber;
         this.comment=comment;
         review.addFileReview(this);
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public Review getReview() {
@@ -70,4 +57,5 @@ public class FileReview {
     public void setComment(String comment) {
         this.comment = comment;
     }
+
 }

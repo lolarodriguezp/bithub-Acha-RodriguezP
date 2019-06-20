@@ -1,1 +1,3 @@
+ar/edu/unlp/info/bd2/services/MongoDBBithubServiceTestCase.class
 ar/edu/unlp/info/bd2/services/BithubServiceTestCase.class
+ar/edu/unlp/info/bd2/services/HibernateBithubTestCase.class

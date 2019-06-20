@@ -5,5 +5,4 @@ public class BithubException extends Exception {
   public BithubException(String message) {
     super(message);
   }
-
 }

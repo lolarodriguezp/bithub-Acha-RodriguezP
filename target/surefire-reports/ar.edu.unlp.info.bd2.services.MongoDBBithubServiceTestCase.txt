@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: ar.edu.unlp.info.bd2.services.MongoDBBithubServiceTestCase
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 4.743 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.MongoDBBithubServiceTestCase
+testCreateReview  Time elapsed: 0.382 sec  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: NO))
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+
+testCreateBranchAndCommit  Time elapsed: 0.036 sec  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: NO))
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+
+testGetCommitsFromUser  Time elapsed: 0.029 sec  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: NO))
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+
+testUsersThatCommitedInBranch  Time elapsed: 0.072 sec  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: NO))
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+
+testCreateTag  Time elapsed: 0.039 sec  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: NO))
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+
+testGetTotalNumberOfCommitsPerUser  Time elapsed: 0.049 sec  <<< ERROR!
+org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.hibernate.exception.GenericJDBCException: Unable to acquire JDBC Connection
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: NO))
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: NO)
+
