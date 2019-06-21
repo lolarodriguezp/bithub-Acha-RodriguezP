@@ -19,4 +19,16 @@ public class MongoDBBithubRepository {
 
   @Autowired private MongoClient client;
 
+  public Object create(Object object, String collection, Class tClass){
+    MongoCollection<Object> objectMongoCollection = client.getDatabase("bd2").getCollection(collection,tClass);
+    objectMongoCollection.insertOne(object);
+    return object;
+  }
+
+//  public Object find(Object object, String collection, Class tClass){
+ //   MongoCollection<Object> objectMongoCollection = client.getDatabase("bd2").getCollection(collection,tClass);
+ //   objectMongoCollection.insertOne(object);
+ //   return object;
+ // }
+
 }
