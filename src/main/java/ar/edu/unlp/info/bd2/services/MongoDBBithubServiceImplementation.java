@@ -20,7 +20,7 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
 
     @Override
     public User createUser(String email, String name) {
-        return (User)this.repository.create(new User(email, name), "users", User.class);
+        return (User)this.repository.createUser(new User(email, name));
     }
 
     @Override
@@ -30,7 +30,7 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
 
     @Override
     public Branch createBranch(String name) {
-        return (Branch) this.repository.create(new Branch(name), "branches", Branch.class);
+        return (Branch) this.repository.createBranch(new Branch(name));
     }
 
     @Override
@@ -40,7 +40,7 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
             throw new BithubException("El commit no existe");
         }
         try{
-            return (Tag) this.repository.create(new Tag(commitHash, name), "tags", Tag.class);
+            return (Tag) this.repository.createTag(new Tag(commitHash, name));
         } catch (Exception e) {
             return null;
         }
@@ -48,12 +48,12 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
 
     @Override
     public Optional<Commit> getCommitByHash(String commitHash) {
-        return Optional.empty();
+        return Optional.ofNullable(this.repository.findCommit(commitHash));
     }
 
     @Override
     public File createFile(String name, String content) {
-        return (File) this.repository.create(new File(name, content), "files", File.class);
+        return (File) this.repository.createFile(new File(name, content));
     }
 
     @Override
@@ -107,11 +107,16 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
         commit.setBranch(branch);
         commit.setHash(hash);
         commit.setAuthor(author);
-        Commit persistedCommit = (Commit) this.repository.create(commit, "commits", Commit.class);
-        Association commits_branch = new Association(commit.getObjectId(), branch.getObjectId());
+        Commit persistedCommit = (Commit) this.repository.createCommit(commit);
+
+        System.out.println(persistedCommit.getObjectId());
+
+        Association commits_branch = new Association(persistedCommit.getObjectId(), branch.getObjectId());
         this.repository.create(commits_branch, "commits_branch", Association.class);
+
         Association author_commits = new Association(author.getObjectId(), commit.getObjectId());
         this.repository.create(author_commits, "author_commits", Association.class);
+
         return persistedCommit;
     }
 }
