@@ -3,13 +3,14 @@ package ar.edu.unlp.info.bd2.services;
 import ar.edu.unlp.info.bd2.model.*;
 import ar.edu.unlp.info.bd2.mongo.Association;
 import ar.edu.unlp.info.bd2.repositories.MongoDBBithubRepository;
+import org.bson.types.ObjectId;
 
 import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-public class MongoDBBithubServiceImplementation implements BithubService {
+public class MongoDBBithubServiceImplementation implements BithubService<ObjectId> {
 
     private MongoDBBithubRepository repository;
 
@@ -74,12 +75,12 @@ public class MongoDBBithubServiceImplementation implements BithubService {
     }
 
     @Override
-    public Optional<Review> getReviewById(Object id) {
+    public Optional<Review> getReviewById(ObjectId id) {
         return Optional.empty();
     }
 
     @Override
-    public List<Commit> getAllCommitsForUser(Object userId) {
+    public List<Commit> getAllCommitsForUser(ObjectId userId) {
         return null;
     }
 
