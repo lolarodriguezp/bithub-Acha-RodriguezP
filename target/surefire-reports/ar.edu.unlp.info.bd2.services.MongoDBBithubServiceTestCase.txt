@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ar.edu.unlp.info.bd2.services.MongoDBBithubServiceTestCase
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.882 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.MongoDBBithubServiceTestCase
-testCreateTag  Time elapsed: 1.432 sec  <<< FAILURE!
-org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <ar.edu.unlp.info.bd2.services.BithubException> but was: <java.lang.ClassCastException>
-	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testCreateTag(BithubServiceTestCase.java:88)
-Caused by: java.lang.ClassCastException: class com.mongodb.client.internal.Java8FindIterableImpl cannot be cast to class ar.edu.unlp.info.bd2.model.Commit (com.mongodb.client.internal.Java8FindIterableImpl and ar.edu.unlp.info.bd2.model.Commit are in unnamed module of loader 'app')
-	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.lambda$testCreateTag$0(BithubServiceTestCase.java:89)
-	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testCreateTag(BithubServiceTestCase.java:88)
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.286 sec - in ar.edu.unlp.info.bd2.services.MongoDBBithubServiceTestCase
