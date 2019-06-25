@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="79812926-60f7-42cc-a897-221e811e932d" name="Default Changelist" comment="" />
+    <list default="true" id="79812926-60f7-42cc-a897-221e811e932d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/config/AppConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/config/HibernateConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/config/MongoDBConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Branch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Commit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/File.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/FileReview.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/PersistentObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Review.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/Tag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/mongo/Association.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/repositories/HibernateBithubRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/BithubException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/BithubService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/HibernateBithubService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ar.edu.unlp.info.bd2.services.HibernateBithubTestCase.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ar.edu.unlp.info.bd2.services.MongoDBBithubServiceTestCase.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ar.edu.unlp.info.bd2.services.HibernateBithubTestCase.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ar.edu.unlp.info.bd2.services.MongoDBBithubServiceTestCase.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ar/edu/unlp/info/bd2/services/HibernateBithubTestCase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceTestCase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/createDatabase.sh" beforeDir="false" afterPath="$PROJECT_DIR$/createDatabase.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/config/HibernateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/config/HibernateConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="26" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="26" />
+            <state relative-caret-position="97">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -59,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/HibernateBithubService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#479#480#0" expanded="true" />
@@ -72,8 +111,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="289">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,6 +182,9 @@
       <find>long</find>
       <find>userby</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -336,6 +378,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -611,7 +654,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/HibernateBithubService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#479#480#0" expanded="true" />
@@ -622,8 +665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -632,8 +675,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="26" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="26" />
+        <state relative-caret-position="97">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
