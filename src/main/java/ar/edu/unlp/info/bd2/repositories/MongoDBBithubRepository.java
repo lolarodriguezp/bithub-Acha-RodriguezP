@@ -19,4 +19,9 @@ public class MongoDBBithubRepository {
 
   @Autowired private MongoClient client;
 
+  public List<Object> listAll(String collection, Class tClass){
+    MongoCollection<Object> objectMongoCollection = client.getDatabase("bd2").getCollection(collection, tClass);
+    return (List<Object>) objectMongoCollection.find();
+  }
+
 }
