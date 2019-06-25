@@ -1096,6 +1096,12 @@ Type "it" for more
 (...)
 
 
+#Aggregate
+
+db.apartments.aggregate( { $sample: { size: 5 }})
+db.apartments.aggregate([{ $geoNear: { near: { type: "Point", coordinates: [-0.127718, 51.507451]}, distanceField: "distanciaCalculada", maxDistance: 15000, spherical: true }}, { $lookup: { from: "reservations", localField: "name", foreignField: "apartmentName", as: "reservas" }},{ $out: "filtradosConReservas" }])
+
+db.filtradosConReservas.aggregate([{ $unwind: "$reservas"}, { $group:  { _id: { name: "$name" }, averageReservationPrice: { $avg: "$reservas.amount" } }}])
 
 
 
