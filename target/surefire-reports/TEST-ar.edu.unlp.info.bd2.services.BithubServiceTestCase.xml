@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="29.825" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="43.018" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+7-Ubuntu-1ubuntu218.04.1"/>
@@ -58,10 +58,10 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testCreateReview" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.354"/>
-  <testcase name="testCreateBranchAndCommit" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.081"/>
-  <testcase name="testGetCommitsFromUser" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.074"/>
-  <testcase name="testUsersThatCommitedInBranch" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.099"/>
-  <testcase name="testCreateTag" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.077"/>
-  <testcase name="testGetTotalNumberOfCommitsPerUser" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.075"/>
+  <testcase name="testCreateReview" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="1.552"/>
+  <testcase name="testCreateBranchAndCommit" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.111"/>
+  <testcase name="testGetCommitsFromUser" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.107"/>
+  <testcase name="testUsersThatCommitedInBranch" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.259"/>
+  <testcase name="testCreateTag" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.142"/>
+  <testcase name="testGetTotalNumberOfCommitsPerUser" classname="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" time="0.084"/>
 </testsuite>

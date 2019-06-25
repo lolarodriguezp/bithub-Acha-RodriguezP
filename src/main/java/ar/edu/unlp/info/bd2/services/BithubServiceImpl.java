@@ -21,52 +21,41 @@ public class BithubServiceImpl implements BithubService {
     @Transactional
     @Override
     public User createUser(String email, String name){
-        User user = this.getUserByEmail(email);
-        if (user == null) {
-            try {
-                user = new User(name, email);
-                return repositorio.saveUser(user);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-
+        if (this.getUserByEmail(email) == null) {
+             try{
+                 return (User) repositorio.save(new User(name, email));
+             }catch (Exception e){
+                 System.out.println(e.getMessage());
+             }
         }
         return null;
     }
 
     @Override
     public User getUserByEmail(String email) {
-        try {
-            User user = repositorio.findByEmail(email);
-            return user;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+            return repositorio.findByEmail(email);
     }
 
     @Transactional
     @Override
-    public Branch createBranch(String name) {
-        //HABRIA QUE VERIFICAR SI HAY UNA RAMA CON ESE NOMBRE COMO EN EL USUARIO O NO IMPORTA?
-
+    public Branch createBranch(String name){
         try {
-            Branch branch = new Branch(name);
-            return repositorio.saveBranch(branch);
-        } catch (Exception e) {
-            return null;
+            return (Branch) repositorio.save(new Branch(name));
+        }catch (Exception e){
+            System.out.println(e.getMessage());
         }
+        return null;
     }
 
     @Transactional
     @Override
     public Commit createCommit(String description, String hash, User author, List<File> files, Branch branch) {
         try {
-            Commit commit = new Commit(description,hash,author,files,branch);
-            return repositorio.saveCommit(commit);
+            return (Commit) repositorio.save(new Commit(description,hash,author,files,branch));
         } catch (Exception e) {
-            return null;
+            System.out.println(e.getMessage());
         }
+        return null;
     }
 
 
@@ -77,55 +66,47 @@ public class BithubServiceImpl implements BithubService {
             throw new BithubException("El commit no existe");
         }
         try{
-            Tag tag= new Tag(commitHash,name);
-            return repositorio.saveTag(tag);
+            return (Tag) repositorio.save(new Tag(commitHash,name));
         }catch (Exception e){
-            return null;
+            System.out.println(e.getMessage());
         }
-
+        return null;
     }
 
     @Override
     public Optional<Commit> getCommitByHash(String commitHash) {
-        try {
-            Commit commit = repositorio.findByHash(commitHash);
-            return  Optional.ofNullable(commit);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+        return Optional.ofNullable(repositorio.findByHash(commitHash));
     }
 
     @Override
     public File createFile(String content, String name) {
         try{
-            File file= new File(name,content);
-            return repositorio.saveFile(file);
+            return (File) repositorio.save(new File(name,content));
 
         }catch (Exception e){
-            return null;
+            System.out.println(e.getMessage());
         }
+        return null;
     }
 
     @Override
     public Optional<Tag> getTagByName(String tagName) {
         try {
-            Tag tag = repositorio.findTagByName(tagName);
-            return  Optional.ofNullable(tag);
+            return  Optional.ofNullable(repositorio.findTagByName(tagName));
         } catch (Exception e) {
-            e.printStackTrace();
-            return null;
+            System.out.println(e.getMessage());
         }
+        return null;
     }
 
     @Override
     public Review createReview(Branch branch, User user) {
         try {
-            Review review= new Review(branch,user);
-            return repositorio.saveReview(review);
+            return (Review) repositorio.save(new Review(branch,user));
         }catch (Exception e){
-            return null;
+            System.out.println(e.getMessage());
         }
+        return null;
     }
 
     @Override
@@ -135,8 +116,12 @@ public class BithubServiceImpl implements BithubService {
 
         for (Commit commit : commits){
             if (commit.getFiles().contains(file)){
-                FileReview fileReview = new FileReview(review, file, lineNumber, comment);
-                return repositorio.saveFileReview(fileReview);
+                try{
+                    return (FileReview) repositorio.save(new FileReview(review, file, lineNumber, comment));
+                }
+                catch (Exception e){
+                    System.out.println(e.getMessage());
+                }
             }
         }
             throw new BithubException("El file no pertenece al branch");
@@ -144,29 +129,16 @@ public class BithubServiceImpl implements BithubService {
 
     @Override
     public Optional<Review> getReviewById(long id) {
-        try {
-            Review review = repositorio.findReviewById(id);
-            return  Optional.ofNullable(review);
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
+            return  Optional.ofNullable(repositorio.findReviewById(id));
     }
 
     @Override
     public List<Commit> getAllCommitsForUser(long userId) {
-        try{
-            List<Commit> commitsForUser = repositorio.findCommitsByUser(userId);
-            return commitsForUser;
-        }catch(Exception e){
-            return null;
-        }
+            return repositorio.findCommitsByUser(userId);
     }
 
     @Override
     public Map<Long, Long> getCommitCountByUser() {
-        try
-        {
             List<User> users = repositorio.findAllUsers();
             Map<Long,Long> map = new HashMap();
 
@@ -174,13 +146,8 @@ public class BithubServiceImpl implements BithubService {
                 map.put(new Long (user.getId()), new Long(user.getCommits().size()));
             }
             return map;
-        }
-        catch (Exception e)
-        {
-            return null;
-        }
     }
-                    //se necesita try catch con bithub exception??
+
     @Override
     public List<User> getUsersThatCommittedInBranch(String branchName) throws BithubException {
         Optional<Branch> branch = getBranchByName(branchName);
@@ -189,19 +156,11 @@ public class BithubServiceImpl implements BithubService {
         }else{
             throw new BithubException("El branch no existe");
         }
-
-
-    } //ver si hay q hacer la consulta mas general (?
+    }
 
     @Override
     public Optional<Branch> getBranchByName(String branchName) {
-        try {
-            Optional<Branch> branch = Optional.ofNullable(repositorio.findBranchByName(branchName));
+        return Optional.ofNullable(repositorio.findBranchByName(branchName));
 
-            return branch;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
     }
 }
