@@ -111,12 +111,12 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
 
     @Override
     public Commit createCommit(String description, String hash, User author, List<File> files, Branch branch) {
-        Commit commit = new Commit();
-        commit.setFiles(files);
+        Commit commit = new Commit(description, hash, author, files, branch);
+        /*commit.setFiles(files);
         commit.setMessage(description);
         commit.setBranch(branch);
         commit.setHash(hash);
-        commit.setAuthor(author);
+        commit.setAuthor(author);*/
         Commit persistedCommit = this.repository.createCommit(commit);
 
         Association commits_branch = new Association(branch.getObjectId(), persistedCommit.getObjectId());

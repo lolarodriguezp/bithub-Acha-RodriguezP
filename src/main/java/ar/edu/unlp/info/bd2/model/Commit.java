@@ -1,5 +1,9 @@
 package ar.edu.unlp.info.bd2.model;
 
+import org.bson.codecs.pojo.annotations.BsonIgnore;
+
+import javax.persistence.CascadeType;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import java.util.List;
@@ -9,10 +13,14 @@ public class Commit extends PersistentObject{
     private String description;
     private String hash;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
+   // @BsonIgnore
     private User author;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "branch_id")
+    @BsonIgnore
     private Branch branch;
 
     @OneToMany

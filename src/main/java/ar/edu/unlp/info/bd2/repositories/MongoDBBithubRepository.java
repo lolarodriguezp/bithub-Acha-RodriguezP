@@ -94,10 +94,10 @@ public class MongoDBBithubRepository {
   public Optional<Branch> findBranch(String branchName){
     MongoCollection<Branch> branchCollection = client.getDatabase("bd2").getCollection("branches", Branch.class);
     Optional<Branch> branch = Optional.ofNullable(branchCollection.find(eq("name", branchName)).first());
-    if(branch.isPresent()) {
+    /*if(branch.isPresent()) {
       List<Commit> branchCommits = this.findCommitsOfBranch(branch.get().getObjectId());
       branch.get().setCommits(branchCommits);
-    }
+    }*/
     return branch;
   }
 
@@ -115,10 +115,15 @@ public class MongoDBBithubRepository {
     MongoCollection<Association> branchCommitsCollection = client.getDatabase("bd2").getCollection("commits_branch", Association.class);
     FindIterable<Association> commitsId = branchCommitsCollection.find(eq("source", branchId));
     List<Commit> commits = new ArrayList<>();
-    for (Association association : commitsId){
+    Iterator<Association> it = commitsId.iterator();
+    while(it.hasNext()){
+      Association assoc = (Association) it.next();
+      commits.add(this.findCommit(assoc.getDestination()));
+    }
+    /*for (Association association : commitsId) {
       ObjectId idCommit = association.getDestination();
       commits.add(this.findCommit(idCommit));
-    }
+    }*/
     return commits;
   }
 
