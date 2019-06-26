@@ -1,6 +1,6 @@
 package ar.edu.unlp.info.bd2.services;
 
-import ar.edu.unlp.info.bd2.config.HibernateConfiguration;
+import ar.edu.unlp.info.bd2.config.SpringDataConfiguration;
 import ar.edu.unlp.info.bd2.model.PersistentObject;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,17 +11,17 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(
-    classes = {HibernateConfiguration.class},
+    classes = {SpringDataConfiguration.class},
     loader = AnnotationConfigContextLoader.class)
-public class HibernateBithubTestCase extends BithubServiceTestCase<Long> {
+public class SpringDataBithubTestCase extends BithubServiceTestCase<Long> {
 
   @Autowired
-  @Qualifier("hibernateService")
+  @Qualifier("springDataJpaService")
   private BithubService service;
 
   @Override
   protected BithubService getService() {
-    return this.service;
+    return service;
   }
 
   @Override

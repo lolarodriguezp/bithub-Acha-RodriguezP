@@ -2,24 +2,13 @@ package ar.edu.unlp.info.bd2.services;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import ar.edu.unlp.info.bd2.config.AppConfig;
-import ar.edu.unlp.info.bd2.config.HibernateConfiguration;
-import ar.edu.unlp.info.bd2.config.MongoDBConfiguration;
 import ar.edu.unlp.info.bd2.model.*;
 import java.util.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.test.annotation.Rollback;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.support.AnnotationConfigContextLoader;
 import org.springframework.transaction.annotation.Transactional;
 
-@ExtendWith(SpringExtension.class)
-@ContextConfiguration(
-    classes = {AppConfig.class, HibernateConfiguration.class, MongoDBConfiguration.class},
-    loader = AnnotationConfigContextLoader.class)
 @Transactional
 @Rollback(true)
 public abstract class BithubServiceTestCase<T> {
@@ -98,7 +87,7 @@ public abstract class BithubServiceTestCase<T> {
 
     assertFalse(this.service.getTagByName("fakeTag123").isPresent());
   }
-/*
+
   @Test
   void testCreateReview() throws BithubException {
     Branch master = this.service.createBranch("master");
@@ -253,6 +242,4 @@ public abstract class BithubServiceTestCase<T> {
     assertFalse(
         users.stream().anyMatch(u -> u.getEmail().equals("user3@bithub.bd2.info.unlp.edu.ar")));
   }
-
- */
 }

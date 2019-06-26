@@ -4,7 +4,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import java.util.List;
 
-public class Commit extends PersistentObject{
+public class Commit extends PersistentObject {
 
     private String description;
     private String hash;
@@ -23,7 +23,7 @@ public class Commit extends PersistentObject{
     public Commit(){
     }
 
-    public Commit(String description, String hash,  User user, List<File> files, Branch branch){
+    public Commit(String description, String hash, User user, List<File> files, Branch branch){
         this.description=description;
         this.hash=hash;
         this.author=user;

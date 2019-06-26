@@ -66,8 +66,8 @@ public interface BithubService<IdType> {
   /**
    * Crea un nuevo archivo a ser commiteado
    *
-   * @param name nombre del archivo, incluyendo su path
    * @param content contenido textual del archivo
+   * @param name nombre del archivo, incluyendo su path
    * @return el archivo creado con los parámetros provistos
    */
   File createFile(String content, String name);
@@ -85,7 +85,7 @@ public interface BithubService<IdType> {
    *
    * @param branch branch en el cual se realiza el code review
    * @param user usuario que realiza el code review
-   * @return el code review creado con los parámetros dados
+   * @return el code review creado con los parámetros da  dos
    */
   Review createReview(Branch branch, User user);
 
