@@ -1,12 +1,7 @@
 package ar.edu.unlp.info.bd2.model;
 
-import javax.persistence.*;
+public class Tag extends PersistentObject {
 
-@Entity
-public class Tag {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
     private String commitHash;
     private String name;
 
@@ -18,14 +13,6 @@ public class Tag {
         super();
         this.commitHash=commitHash;
         this.name=name;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public String getCommitHash() {
@@ -43,4 +30,5 @@ public class Tag {
     public void setName(String name) {
         this.name = name;
     }
+
 }
