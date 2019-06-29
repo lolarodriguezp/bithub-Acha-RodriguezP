@@ -98,7 +98,7 @@ public abstract class BithubServiceTestCase<T> {
 
     assertFalse(this.service.getTagByName("fakeTag123").isPresent());
   }
-/*
+
   @Test
   void testCreateReview() throws BithubException {
     Branch master = this.service.createBranch("master");
@@ -254,5 +254,5 @@ public abstract class BithubServiceTestCase<T> {
         users.stream().anyMatch(u -> u.getEmail().equals("user3@bithub.bd2.info.unlp.edu.ar")));
   }
 
- */
+
 }

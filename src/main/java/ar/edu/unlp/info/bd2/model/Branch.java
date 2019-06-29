@@ -12,8 +12,8 @@ public class Branch extends PersistentObject {
 
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "commit_id")
+    @OneToMany //(cascade = CascadeType.ALL)
+    //@JoinColumn(name = "commit_id")
     private List<Commit> commit = new ArrayList<>();
 
     public Branch() {

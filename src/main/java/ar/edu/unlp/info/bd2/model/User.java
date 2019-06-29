@@ -13,9 +13,9 @@ public class User extends PersistentObject {
     private String name;
     private String email;
 
-    @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name = "commit_id")
-    @BsonIgnore
+    @OneToMany //(cascade = CascadeType.ALL)
+    //@JoinColumn(name = "commit_id")
+    //@BsonIgnore
     private List<Commit> commits = new ArrayList<Commit>();
 
     public User() {

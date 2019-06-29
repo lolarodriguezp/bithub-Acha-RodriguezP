@@ -13,20 +13,18 @@ public class Commit extends PersistentObject{
     private String description;
     private String hash;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "user_id")
-   // @BsonIgnore
+    @ManyToOne //(cascade = CascadeType.ALL)
+    //@JoinColumn(name = "user_id")
+    //@BsonIgnore
     private User author;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "branch_id")
+    @ManyToOne //(cascade = CascadeType.ALL)
+    //@JoinColumn(name = "branch_id")
     @BsonIgnore
     private Branch branch;
 
     @OneToMany
     private List<File> files;
-
-
 
     public Commit(){
     }

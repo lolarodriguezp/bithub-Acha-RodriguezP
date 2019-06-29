@@ -6,10 +6,7 @@ import ar.edu.unlp.info.bd2.repositories.MongoDBBithubRepository;
 import org.bson.types.ObjectId;
 
 import javax.swing.text.html.Option;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 public class MongoDBBithubServiceImplementation implements BithubService<ObjectId> {
 
@@ -69,12 +66,31 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
 
     @Override
     public FileReview addFileReview(Review review, File file, int lineNumber, String comment) throws BithubException {
-        return null;
+        List<Commit> commits = this.repository.findCommitsOfBranch(review.getBranch().getObjectId());
+
+        for (Commit commit : commits){
+            for (File fileOfCommit : commit.getFiles()){
+                if (fileOfCommit.getObjectId().equals(file.getObjectId())) {
+                    FileReview fileReview = new FileReview();
+                    fileReview.setComment(comment);
+                    fileReview.setLineNumber(lineNumber);
+                    fileReview.setReviewedFile(file);
+                    fileReview.setReview(review);
+                    FileReview persistedFileReview = this.repository.createFileReview(fileReview);
+
+                    Association reviews = new Association(review.getObjectId(), persistedFileReview.getObjectId());
+                    this.repository.create(reviews, "reviews_fileReview", Association.class);
+
+                    return persistedFileReview;
+                }
+            }
+        }
+        throw new BithubException("El file no pertenece al branch");
     }
 
     @Override
     public Optional<Review> getReviewById(ObjectId id) {
-        return Optional.ofNullable(this.repository.findReview(id));
+        return this.repository.findReview(id);
     }
 
     @Override
@@ -89,7 +105,7 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
             List<User> users = this.repository.findAllUsers();
             Map<ObjectId,Long> map = new HashMap<>();
             for (User user : users){
-                map.put(user.getObjectId(), new Long(user.getCommits().size()) );
+                map.put(user.getObjectId(), new Long(repository.findCommitsForUser(user.getObjectId()).size()) );
             }
             return map;
         }
@@ -101,7 +117,17 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
 
     @Override
     public List<User> getUsersThatCommittedInBranch(String branchName) throws BithubException {
-        return null;
+        Optional<Branch> branch = getBranchByName(branchName);
+        if(branch.isPresent()){
+            List<Commit> commits = this.repository.findCommitsOfBranch(branch.get().getObjectId());
+            List<User> users = new ArrayList<>();
+            for (Commit commit : commits){
+                    users.add(commit.getAuthor());
+            }
+            return users;
+        }else{
+            throw new BithubException("El branch no existe");
+        }
     }
 
     @Override
@@ -111,12 +137,12 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
 
     @Override
     public Commit createCommit(String description, String hash, User author, List<File> files, Branch branch) {
-        Commit commit = new Commit(description, hash, author, files, branch);
-        /*commit.setFiles(files);
+        Commit commit = new Commit();
+        commit.setFiles(files);
         commit.setMessage(description);
         commit.setBranch(branch);
         commit.setHash(hash);
-        commit.setAuthor(author);*/
+        commit.setAuthor(author);
         Commit persistedCommit = this.repository.createCommit(commit);
 
         Association commits_branch = new Association(branch.getObjectId(), persistedCommit.getObjectId());
