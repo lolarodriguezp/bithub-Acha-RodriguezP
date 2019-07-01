@@ -21,7 +21,6 @@
 /home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP/src/main/java/ar/edu/unlp/info/bd2/services/SpringDataBithubService.java
 /home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP/src/main/java/ar/edu/unlp/info/bd2/services/HibernateBithubService.java
 /home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP/src/main/java/ar/edu/unlp/info/bd2/config/HibernateConfiguration.java
-/home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP/src/main/java/ar/edu/unlp/info/bd2/services/BithubServiceImpl.java
 /home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP/src/main/java/ar/edu/unlp/info/bd2/repositories/spring/data/FileRepository.java
 /home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java
 /home/lolita/Escritorio/Facu/bd2/bithub/bithub-Acha-RodriguezP/src/main/java/ar/edu/unlp/info/bd2/repositories/spring/data/UserRepository.java

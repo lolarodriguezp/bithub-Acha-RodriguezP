@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import sun.rmi.transport.ObjectTable;
 
-
 import javax.persistence.Query;
 import java.util.List;
 

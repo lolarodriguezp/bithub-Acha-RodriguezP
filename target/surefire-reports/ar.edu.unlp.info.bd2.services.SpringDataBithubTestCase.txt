@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 4.458 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase
+testCreateReview  Time elapsed: 0.013 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+
+testCreateBranchAndCommit  Time elapsed: 0.007 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+
+testGetCommitsFromUser  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+
+testUsersThatCommitedInBranch  Time elapsed: 0 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+
+testCreateTag  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+
+testGetTotalNumberOfCommitsPerUser  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+
