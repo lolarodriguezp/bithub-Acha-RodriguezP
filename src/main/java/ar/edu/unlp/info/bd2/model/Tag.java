@@ -1,5 +1,11 @@
 package ar.edu.unlp.info.bd2.model;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Tag")
 public class Tag extends PersistentObject {
 
     private String commitHash;

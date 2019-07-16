@@ -1,34 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 4.458 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase
-testCreateReview  Time elapsed: 0.013 sec  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
-Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+Tests run: 6, Failures: 1, Errors: 5, Skipped: 0, Time elapsed: 19.827 sec <<< FAILURE! - in ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase
+testCreateReview  Time elapsed: 0.152 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testCreateReview(BithubServiceTestCase.java:101)
 
-testCreateBranchAndCommit  Time elapsed: 0.007 sec  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
-Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+testCreateBranchAndCommit  Time elapsed: 0.054 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <user@bithub.bd2.info.unlp.edu.ar> but was: <User>
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testCreateBranchAndCommit(BithubServiceTestCase.java:35)
 
-testGetCommitsFromUser  Time elapsed: 0 sec  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
-Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+testGetCommitsFromUser  Time elapsed: 0.076 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testGetCommitsFromUser(BithubServiceTestCase.java:156)
 
-testUsersThatCommitedInBranch  Time elapsed: 0 sec  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
-Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+testUsersThatCommitedInBranch  Time elapsed: 0.077 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testUsersThatCommitedInBranch(BithubServiceTestCase.java:216)
 
-testCreateTag  Time elapsed: 0.002 sec  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
-Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+testCreateTag  Time elapsed: 0.077 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testCreateTag(BithubServiceTestCase.java:74)
 
-testGetTotalNumberOfCommitsPerUser  Time elapsed: 0.001 sec  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in ar.edu.unlp.info.bd2.config.SpringDataConfiguration: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
-Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: ar.edu.unlp.info.bd2.model.Branch.commits[ar.edu.unlp.info.bd2.model.Commit]
+testGetTotalNumberOfCommitsPerUser  Time elapsed: 0.075 sec  <<< ERROR!
+java.lang.NullPointerException
+	at ar.edu.unlp.info.bd2.services.BithubServiceTestCase.testGetTotalNumberOfCommitsPerUser(BithubServiceTestCase.java:189)
 

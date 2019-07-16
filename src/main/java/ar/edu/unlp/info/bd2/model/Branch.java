@@ -11,7 +11,7 @@ public class Branch extends PersistentObject {
 
     private String name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "branch")
    // @JoinColumn(name = "commit_id")
     private List<Commit> commits = new ArrayList<>();
 

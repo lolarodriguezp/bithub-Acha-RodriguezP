@@ -1,5 +1,11 @@
 package ar.edu.unlp.info.bd2.model;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "File")
 public class File extends PersistentObject {
 
     private String filename;

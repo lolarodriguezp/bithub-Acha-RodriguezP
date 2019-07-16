@@ -1,14 +1,18 @@
 package ar.edu.unlp.info.bd2.model;
 
+import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 import java.util.List;
 
+@Entity
+@Table(name = "User")
 public class User extends PersistentObject {
 
     private String name;
     private String email;
 
-    @OneToMany
+    @OneToMany(mappedBy = "author")
     private List<Commit> commits;
 
     public User() {

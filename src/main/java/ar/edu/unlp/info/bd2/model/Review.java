@@ -1,9 +1,10 @@
 package ar.edu.unlp.info.bd2.model;
 
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name = "Review")
 public class Review extends PersistentObject {
 
     @ManyToOne
@@ -13,6 +14,7 @@ public class Review extends PersistentObject {
     private User author;
 
     @OneToMany
+    @JoinColumn(name = "review_id")
     private List<FileReview> reviews;
 
     public Review(){

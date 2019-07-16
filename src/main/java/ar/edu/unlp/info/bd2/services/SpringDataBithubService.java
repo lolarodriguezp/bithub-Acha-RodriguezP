@@ -40,7 +40,7 @@ public class SpringDataBithubService implements BithubService<Long> {
 
     @Override
     public User createUser(String email, String name) {
-        return userRepository.save(new User(email,name));
+        return userRepository.save(new User(name, email));
     }
 
     @Override
@@ -66,19 +66,17 @@ public class SpringDataBithubService implements BithubService<Long> {
 
     @Override
     public Optional<Commit> getCommitByHash(String commitHash) {
-        Optional<Commit> commit = Optional.ofNullable(commitRepository.findByHash(commitHash));
-        return commit;
+       return Optional.ofNullable(commitRepository.findByHash(commitHash));
     }
 
     @Override
     public File createFile(String content, String name) {
-        return fileRepository.save(new File(content,name));
+        return fileRepository.save(new File(name,content));
     }
 
     @Override
     public Optional<Tag> getTagByName(String tagName) {
-        Optional<Tag> tag = Optional.ofNullable(tagRepository.findByName(tagName));
-        return tag;
+        return Optional.ofNullable(tagRepository.findByName(tagName));
     }
 
     @Override
@@ -99,8 +97,7 @@ public class SpringDataBithubService implements BithubService<Long> {
 
     @Override
     public Optional<Review> getReviewById(Long id) {
-        Optional<Review> review = (Optional<Review>) reviewRepository.findById(id);
-        return review;
+        return reviewRepository.findById(id);
     }
 
     @Override
@@ -131,12 +128,12 @@ public class SpringDataBithubService implements BithubService<Long> {
 
     @Override
     public Optional<Branch> getBranchByName(String branchName) {
-        Optional<Branch> branch = Optional.ofNullable(branchRepository.findByName(branchName));
-        return branch;
+        return Optional.ofNullable(branchRepository.findByName(branchName));
     }
 
     @Override
     public Commit createCommit(String description, String hash, User author, List<File> files, Branch branch) {
-        return commitRepository.save(new Commit(description,hash,author,files,branch));
+            Commit commit = commitRepository.save(new Commit(description, hash ,author,files,branch));
+            return commit;
     }
 }

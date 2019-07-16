@@ -3,20 +3,23 @@ package ar.edu.unlp.info.bd2.model;
 import javax.persistence.*;
 import java.util.List;
 
+@Entity
+@Table(name = "Commit")
 public class Commit extends PersistentObject {
 
     private String description;
     private String hash;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+  //  @JoinColumn(name = "user_id", nullable = false)
     private User author;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "branch_id", nullable = false)
+//   @JoinColumn(name = "branch_id", nullable = false)
     private Branch branch;
 
     @OneToMany
+    @JoinColumn(name = "file_id")
     private List<File> files;
 
 

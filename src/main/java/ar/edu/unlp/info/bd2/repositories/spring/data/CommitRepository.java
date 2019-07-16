@@ -17,6 +17,6 @@ import java.util.List;
 public interface CommitRepository extends CrudRepository<Commit, Long> {
      Commit findByHash(String hash);
 
-     @Query("SELECT DISTINCT(c.author) FROM Commit m INNER JOIN c.branch cb WHERE cb.id = ?1")
+     @Query("SELECT DISTINCT (c.author) FROM Commit c INNER JOIN c.branch cb WHERE cb.id = ?1")
      List<User> findDistinctAuthorByBranch(Long branchId);
 }

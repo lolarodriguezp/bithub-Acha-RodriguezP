@@ -44,7 +44,8 @@ public class HibernateConfiguration {
     dataSource.setDriverClassName("com.mysql.jdbc.Driver");
     dataSource.setUrl("jdbc:mysql://localhost:3306/bd2_grupo" + this.getGroupNumber());
     dataSource.setUsername("root");
-    dataSource.setPassword("");
+    dataSource.setPassword("lolita");
+
 
     return dataSource;
   }
@@ -70,6 +71,6 @@ public class HibernateConfiguration {
   }
 
   private Integer getGroupNumber() {
-    return 0;
+    return 8;
   }
 }
