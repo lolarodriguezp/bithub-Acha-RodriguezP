@@ -10,11 +10,11 @@ public class Commit extends PersistentObject {
     private String description;
     private String hash;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
   //  @JoinColumn(name = "user_id", nullable = false)
     private User author;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
 //   @JoinColumn(name = "branch_id", nullable = false)
     private Branch branch;
 

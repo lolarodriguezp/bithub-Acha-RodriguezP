@@ -133,7 +133,7 @@ public class SpringDataBithubService implements BithubService<Long> {
 
     @Override
     public Commit createCommit(String description, String hash, User author, List<File> files, Branch branch) {
-            Commit commit = commitRepository.save(new Commit(description, hash ,author,files,branch));
-            return commit;
+            Commit commit = new Commit(description, hash ,author,files,branch);
+            return commitRepository.save(commit);
     }
 }

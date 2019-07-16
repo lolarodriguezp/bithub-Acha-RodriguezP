@@ -3,6 +3,7 @@ package ar.edu.unlp.info.bd2.model;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -13,7 +14,7 @@ public class User extends PersistentObject {
     private String email;
 
     @OneToMany(mappedBy = "author")
-    private List<Commit> commits;
+    private List<Commit> commits = new ArrayList<>();
 
     public User() {
         super();
