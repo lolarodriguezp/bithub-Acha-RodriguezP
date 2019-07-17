@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="79812926-60f7-42cc-a897-221e811e932d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/SpringDataBithubService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/SpringDataBithubService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/config/MongoDBConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/config/MongoDBConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/repositories/HibernateBithubRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/repositories/HibernateBithubRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/HibernateBithubService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/HibernateBithubService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,8 +25,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            <state relative-caret-position="188">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/spring/data/CommitRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,31 +44,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="-283">
+              <caret line="178" selection-start-line="178" selection-end-line="178" />
             </state>
           </provider>
         </entry>
@@ -65,8 +55,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/SpringDataBithubService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+            <state relative-caret-position="381">
               <caret line="135" selection-start-line="135" selection-end-line="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="109" column="55" selection-start-line="109" selection-start-column="55" selection-end-line="109" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -74,20 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="360">
               <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/spring/data/CommitRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -291,29 +287,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringDataBithubTestCase.testCreateTag">
-    <configuration name="HibernateBithubTestCase,testCreateBranchAndCommit and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bd2-2019" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ar.edu.unlp.info.bd2.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ar.edu.unlp.info.bd2.services" />
-      <option name="MAIN_CLASS_NAME" value="ar.edu.unlp.info.bd2.services.BithubServiceTestCase" />
-      <option name="METHOD_NAME" value="testCreateBranchAndCommit" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="ar.edu.unlp.info.bd2.services.HibernateBithubTestCase,testCreateBranchAndCommit" />
-        <pattern testClass="ar.edu.unlp.info.bd2.services.MongoDBBithubServiceTestCase,testCreateBranchAndCommit" />
-        <pattern testClass="ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase,testCreateBranchAndCommit" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SpringDataBithubTestCase.testUsersThatCommitedInBranch">
+    <configuration name="SpringDataBithubTestCase.testCreateReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bd2-2019" />
       <extension name="coverage">
         <pattern>
@@ -323,7 +298,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ar.edu.unlp.info.bd2.services" />
       <option name="MAIN_CLASS_NAME" value="ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase" />
-      <option name="METHOD_NAME" value="testCreateBranchAndCommit" />
+      <option name="METHOD_NAME" value="testCreateReview" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -345,13 +320,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringDataBithubTestCase.testGetCommitsFromUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bd2-2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.edu.unlp.info.bd2.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.edu.unlp.info.bd2.services" />
+      <option name="MAIN_CLASS_NAME" value="ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase" />
+      <option name="METHOD_NAME" value="testGetCommitsFromUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDataBithubTestCase.testGetTotalNumberOfCommitsPerUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bd2-2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.edu.unlp.info.bd2.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.edu.unlp.info.bd2.services" />
+      <option name="MAIN_CLASS_NAME" value="ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase" />
+      <option name="METHOD_NAME" value="testGetTotalNumberOfCommitsPerUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringDataBithubTestCase.testUsersThatCommitedInBranch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bd2-2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ar.edu.unlp.info.bd2.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ar.edu.unlp.info.bd2.services" />
+      <option name="MAIN_CLASS_NAME" value="ar.edu.unlp.info.bd2.services.SpringDataBithubTestCase" />
+      <option name="METHOD_NAME" value="testUsersThatCommitedInBranch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpringDataBithubTestCase.testCreateTag" />
-        <item itemvalue="JUnit.SpringDataBithubTestCase.testCreateBranchAndCommit" />
-        <item itemvalue="JUnit.SpringDataBithubTestCase.testCreateBranchAndCommit" />
-        <item itemvalue="JUnit.SpringDataBithubTestCase.testCreateBranchAndCommit" />
-        <item itemvalue="JUnit.SpringDataBithubTestCase.testCreateBranchAndCommit" />
+        <item itemvalue="JUnit.SpringDataBithubTestCase.testUsersThatCommitedInBranch" />
+        <item itemvalue="JUnit.SpringDataBithubTestCase.testUsersThatCommitedInBranch" />
+        <item itemvalue="JUnit.SpringDataBithubTestCase.testGetTotalNumberOfCommitsPerUser" />
+        <item itemvalue="JUnit.SpringDataBithubTestCase.testGetCommitsFromUser" />
+        <item itemvalue="JUnit.SpringDataBithubTestCase.testGetCommitsFromUser" />
       </list>
     </recent_temporary>
   </component>
@@ -369,42 +392,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.15 at 23h 03m 56s.xml">
+    <history-entry file="SpringDataBithubTestCase_testCreateReview - 2019.07.17 at 18h 18m 47s.xml">
+      <configuration name="SpringDataBithubTestCase.testCreateReview" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringDataBithubTestCase_testCreateReview - 2019.07.17 at 18h 21m 22s.xml">
+      <configuration name="SpringDataBithubTestCase.testCreateReview" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.17 at 18h 21m 57s.xml">
       <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.15 at 23h 04m 48s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
+    <history-entry file="SpringDataBithubTestCase_testCreateTag - 2019.07.17 at 18h 23m 44s.xml">
+      <configuration name="SpringDataBithubTestCase.testCreateTag" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.16 at 08h 38m 40s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
+    <history-entry file="SpringDataBithubTestCase_testGetCommitsFromUser - 2019.07.17 at 18h 30m 28s.xml">
+      <configuration name="SpringDataBithubTestCase.testGetCommitsFromUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.16 at 08h 40m 19s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
+    <history-entry file="SpringDataBithubTestCase_testGetCommitsFromUser - 2019.07.17 at 18h 38m 21s.xml">
+      <configuration name="SpringDataBithubTestCase.testGetCommitsFromUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.16 at 08h 42m 15s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
+    <history-entry file="SpringDataBithubTestCase_testGetCommitsFromUser - 2019.07.17 at 18h 39m 02s.xml">
+      <configuration name="SpringDataBithubTestCase.testGetCommitsFromUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.16 at 08h 44m 37s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
+    <history-entry file="SpringDataBithubTestCase_testGetTotalNumberOfCommitsPerUser - 2019.07.17 at 18h 39m 41s.xml">
+      <configuration name="SpringDataBithubTestCase.testGetTotalNumberOfCommitsPerUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.16 at 09h 25m 53s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
+    <history-entry file="SpringDataBithubTestCase_testUsersThatCommitedInBranch - 2019.07.17 at 18h 40m 43s.xml">
+      <configuration name="SpringDataBithubTestCase.testUsersThatCommitedInBranch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.16 at 09h 31m 04s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.16 at 09h 31m 43s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpringDataBithubTestCase_testCreateBranchAndCommit - 2019.07.16 at 09h 33m 17s.xml">
-      <configuration name="SpringDataBithubTestCase.testCreateBranchAndCommit" configurationId="JUnit" />
+    <history-entry file="SpringDataBithubTestCase_testUsersThatCommitedInBranch - 2019.07.17 at 18h 42m 47s.xml">
+      <configuration name="SpringDataBithubTestCase.testUsersThatCommitedInBranch" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5394933" visible="true" weight="0.26613545" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5394933" visible="true" weight="0.27091634" />
       <window_info id="Structure" order="1" sideWeight="0.4605067" side_tool="true" weight="0.24940239" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -413,12 +436,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884902" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5665172" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7279352" visible="true" weight="0.41554558" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24663678" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7279352" weight="0.3497758" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32884902" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.561753" weight="0.18236174" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.561753" weight="0.089686096" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.43824703" side_tool="true" weight="0.5530643" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32884902" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4979757" weight="0.32286996" />
@@ -468,60 +491,6 @@
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java</url>
-          <line>198</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java</url>
-          <line>65</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/SpringDataBithubService.java</url>
-          <line>135</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/SpringDataBithubService.java</url>
-          <line>137</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java</url>
-          <line>36</line>
-          <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -544,13 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="30" column="38" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -599,29 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/MongoDBBithubServiceImplementation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="105">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1714#1715#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1935#1936#0" expanded="true" />
-            <element signature="e#2319#2320#0" expanded="true" />
-            <element signature="e#2393#2394#0" expanded="true" />
-            <element signature="e#2472#2473#0" expanded="true" />
-            <element signature="e#2537#2538#0" expanded="true" />
-            <element signature="e#3211#3212#0" expanded="true" />
-            <element signature="e#3272#3273#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,26 +734,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="169" selection-start-line="169" selection-end-line="169" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/spring/data/CommitRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="360">
           <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
@@ -824,20 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/SpringDataBithubService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.0.10.RELEASE/spring-aop-5.0.10.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -845,30 +755,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Branch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="53" />
+        <state relative-caret-position="180">
+          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/MongoDBBithubRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="109" column="55" selection-start-line="109" selection-start-column="55" selection-end-line="109" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/repositories/spring/data/CommitRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="67" selection-start-line="19" selection-start-column="67" selection-end-line="19" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/services/SpringDataBithubService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="381">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ar/edu/unlp/info/bd2/model/Commit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ar/edu/unlp/info/bd2/services/BithubServiceTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-283">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
         </state>
       </provider>
     </entry>
