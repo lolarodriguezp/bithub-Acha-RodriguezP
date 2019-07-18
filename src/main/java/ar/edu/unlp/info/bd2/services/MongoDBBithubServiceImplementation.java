@@ -120,7 +120,7 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
         Optional<Branch> branch = getBranchByName(branchName);
         if(branch.isPresent()){
             List<Commit> commits = this.repository.findCommitsOfBranch(branch.get().getObjectId());
-            List<User> users = new ArrayList<>();
+            List<User> users = this.repository.getUsersThatCommitedInBranch(branch.get());
             for (Commit commit : commits){
                     users.add(commit.getAuthor());
             }

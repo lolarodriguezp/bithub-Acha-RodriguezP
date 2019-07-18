@@ -167,14 +167,20 @@ public class MongoDBBithubRepository {
             branchCollection.aggregate(
                     Arrays.asList(
                             match(eq(" _id", branch.getObjectId())),
-                            lookup("commit_author", "commits._id", "source", "authors"),
-                            lookup("user", "author.destination","_id", "authors"),
+                            lookup("author_commits", "commits._id", "destination", "authors"),
+                            lookup("user", "authors.source","_id", "authors"),
                             unwind("$authors"),
                             replaceRoot("$authors")
 
                     )
             );
-    return new ArrayList<User>();
+    List<User> users = new ArrayList<>();
+    for (User user : iterable){
+      users.add(user);
+    }
+   // Stream<User> stream = StreamSupport.stream(Spliterators.spliteratorUnknownSize(iterable.iterator(), 0), false);
+    //List<User> users = stream.collect(Collectors.toList());
+    return users;
   }
 
   public List<User> findAllUsers(){
