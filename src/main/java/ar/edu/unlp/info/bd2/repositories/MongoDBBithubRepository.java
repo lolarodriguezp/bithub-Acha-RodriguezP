@@ -161,6 +161,22 @@ public class MongoDBBithubRepository {
     return fileReviews;
   }
 
+  public List<User> getUsersThatCommitedInBranch(Branch branch){
+    MongoCollection<User> branchCollection = client.getDatabase("bd2").getCollection("branches", User.class);
+    AggregateIterable<User> iterable =
+            branchCollection.aggregate(
+                    Arrays.asList(
+                            match(eq(" _id", branch.getObjectId())),
+                            lookup("commit_author", "commits._id", "source", "authors"),
+                            lookup("user", "author.destination","_id", "authors"),
+                            unwind("$authors"),
+                            replaceRoot("$authors")
+
+                    )
+            );
+    return new ArrayList<User>();
+  }
+
   public List<User> findAllUsers(){
     MongoCollection<User> userCollection = client.getDatabase("bd2").getCollection("users", User.class);
     MongoCursor<User> usersCollection = userCollection.find().iterator();
@@ -173,6 +189,8 @@ public class MongoDBBithubRepository {
     } finally {
       usersCollection.close();
     }
+
+
 
   }
 
