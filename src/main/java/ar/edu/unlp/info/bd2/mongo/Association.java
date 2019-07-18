@@ -5,6 +5,8 @@ import org.bson.types.ObjectId;
 
 public class Association {
 
+  public Association (){  }
+
   public Association(ObjectId source, ObjectId destination) {
     this.source = source;
     this.destination = destination;

@@ -1,6 +1,11 @@
 package ar.edu.unlp.info.bd2.model;
 
+import org.bson.codecs.pojo.annotations.BsonIgnore;
+
+import javax.persistence.CascadeType;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
+import java.util.ArrayList;
 import java.util.List;
 
 public class User extends PersistentObject {
@@ -8,8 +13,10 @@ public class User extends PersistentObject {
     private String name;
     private String email;
 
-    @OneToMany
-    private List<Commit> commits;
+    @OneToMany //(cascade = CascadeType.ALL)
+    //@JoinColumn(name = "commit_id")
+    //@BsonIgnore
+    private List<Commit> commits = new ArrayList<Commit>();
 
     public User() {
         super();

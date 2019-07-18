@@ -1,5 +1,9 @@
 package ar.edu.unlp.info.bd2.model;
 
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.CascadeType;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +12,8 @@ public class Branch extends PersistentObject {
 
     private String name;
 
-    @OneToMany
+    @OneToMany //(cascade = CascadeType.ALL)
+    //@JoinColumn(name = "commit_id")
     private List<Commit> commit = new ArrayList<>();
 
     public Branch() {
