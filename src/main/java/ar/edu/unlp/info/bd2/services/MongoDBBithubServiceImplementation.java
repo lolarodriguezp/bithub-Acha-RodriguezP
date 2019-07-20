@@ -114,20 +114,40 @@ public class MongoDBBithubServiceImplementation implements BithubService<ObjectI
             return null;
         }
     }
-
+/*
     @Override
     public List<User> getUsersThatCommittedInBranch(String branchName) throws BithubException {
         Optional<Branch> branch = getBranchByName(branchName);
         if(branch.isPresent()){
-            List<Commit> commits = this.repository.findCommitsOfBranch(branch.get().getObjectId());
             List<User> users = this.repository.getUsersThatCommitedInBranch(branch.get());
+            return users;
+        }else{
+            throw new BithubException("El branch no existe");
+        }
+    }
+*/
+    @Override
+    public List<User> getUsersThatCommittedInBranch(String branchName) throws BithubException {
+        Optional<Branch> branch = this.getBranchByName(branchName);
+        if(branch.isPresent()){
+            List<Commit> commits = this.repository.findCommitsOfBranch(branch.get().getObjectId());
+
+            List<User> users = new ArrayList<>();
             for (Commit commit : commits){
-                    users.add(commit.getAuthor());
+                if (!(this.existCommit(users,commit))) {
+                    users.add(commit.getAuthor()); }
             }
             return users;
         }else{
             throw new BithubException("El branch no existe");
         }
+    }
+
+    public boolean existCommit(List<User> users, Commit commit){
+        for(User user : users) {
+            if (user.getObjectId().equals(commit.getAuthor().getObjectId())) {
+                return true;}
+        }return false;
     }
 
     @Override

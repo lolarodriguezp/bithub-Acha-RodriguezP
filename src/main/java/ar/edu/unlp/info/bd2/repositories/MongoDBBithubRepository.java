@@ -161,16 +161,20 @@ public class MongoDBBithubRepository {
     return fileReviews;
   }
 
-  public List<User> getUsersThatCommitedInBranch(Branch branch){
-    MongoCollection<User> branchCollection = client.getDatabase("bd2").getCollection("branches", User.class);
+
+
+  /*public List<User> getUsersThatCommitedInBranch(Branch branch){
+    MongoCollection<User> branchCommitsCollection = client.getDatabase("bd2").getCollection("commits_branch", User.class);
+
+    //MongoCollection<Commit> commitCollection = (MongoCollection<User>) this.findCommitsOfBranch(branch.getObjectId());
     AggregateIterable<User> iterable =
-            branchCollection.aggregate(
+            branchCommitsCollection.aggregate(
                     Arrays.asList(
-                            match(eq(" _id", branch.getObjectId())),
-                            lookup("author_commits", "commits._id", "destination", "authors"),
-                            lookup("user", "authors.source","_id", "authors"),
-                            unwind("$authors"),
-                            replaceRoot("$authors")
+                            match(eq("source", branch.getObjectId())), //commits of branchId
+                            lookup("commits_branch", "author_commits.destination", "destination", "author_commits"),
+                            lookup("user", "author_commits.source","_id", "authors")
+                           // unwind("$authors"),
+                            //replaceRoot("$authors")
 
                     )
             );
@@ -181,7 +185,10 @@ public class MongoDBBithubRepository {
    // Stream<User> stream = StreamSupport.stream(Spliterators.spliteratorUnknownSize(iterable.iterator(), 0), false);
     //List<User> users = stream.collect(Collectors.toList());
     return users;
-  }
+  }*/
+
+
+
 
   public List<User> findAllUsers(){
     MongoCollection<User> userCollection = client.getDatabase("bd2").getCollection("users", User.class);
